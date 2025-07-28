@@ -4,8 +4,8 @@ import React from "react";
  
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto  py-3 flex items-center justify-between mt-2">
+    <nav className="w-full sticky top-0 bg-white shadow-lg z-50">
+      <div className="max-w-7xl mx-auto  py-3 flex items-center justify-between  ">
         
         {/* Left: Logo and Links */}
         <div className="flex items-center space-x-10">
@@ -51,7 +51,7 @@ export default function Navbar() {
         <div>
           <button
             className="bg-indigo-950 text-white font-medium px-6 py-3.5 rounded-md flex items-center space-x-2 
-            border-2 border-transparent hover:border-indigo-950 
+            border-3 border-transparent hover:border-indigo-950 
             hover:bg-white hover:text-indigo-950 
             transition-all duration-300 hover:font-semibold mt-2"
           >
