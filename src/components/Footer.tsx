@@ -3,10 +3,10 @@ import { FaDiscord } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-[#fbfef5] text-[#0b0b2b] px-6 md:px-20 py-10 text-sm cursor-pointer">
-      <div className="max-w-7xl mx-auto border-b font-semibold border-lime-200 pb-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-md">
+      <div className="max-w-7xl mx-auto border-b font-semibold border-lime-200 pb-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-[17px]">
         {/* Product */}
         <div>
-          <h4 className="font-semibold text-gray-500 mb-2">Product</h4>
+          <h4 className="font-semibold text-gray-500 mb-4">Product</h4>
           <ul className="space-y-3">
             <li className="hover:text-[#85c226]">Features</li>
             <li className="flex items-center gap-2 hover:text-[#85c226]">
@@ -20,7 +20,7 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h4 className="font-semibold text-gray-500 mb-2">Company</h4>
+          <h4 className="font-semibold text-gray-500 mb-4">Company</h4>
           <ul className="space-y-3">
             <li className="hover:text-[#85c226]">About us</li>
             <li className="hover:text-[#85c226]">Media kit</li>
@@ -30,7 +30,7 @@ export default function Footer() {
 
         {/* Resources */}
         <div>
-          <h4 className="font-semibold text-gray-500 mb-2 cursor-pointer">Resources</h4>
+          <h4 className="font-semibold text-gray-500 mb-4 cursor-pointer">Resources</h4>
           <ul className="space-y-3 ">
             <li className="hover:text-[#85c226]">FAQs</li>
             <li className="hover:text-[#85c226]">Request Demo</li>
@@ -41,7 +41,7 @@ export default function Footer() {
 
         {/* Use Cases */}
         <div>
-          <h4 className="font-semibold text-gray-500 mb-2">Use cases</h4>
+          <h4 className="font-semibold text-gray-500 mb-4">Use cases</h4>
           <ul className="space-y-3">
             <li className="hover:text-[#85c226]">Customer Success</li>
             <li className="hover:text-[#85c226]">Employee Training</li>
@@ -52,7 +52,7 @@ export default function Footer() {
 
         {/* Legal */}
         <div>
-          <h4 className="font-semibold text-gray-500 mb-2">Legal</h4>
+          <h4 className="font-semibold text-gray-500 mb-4">Legal</h4>
           <ul className="space-y-3">
             <li className="hover:text-[#85c226]">Terms</li>
             <li className="hover:text-[#85c226]">Privacy</li>
@@ -61,7 +61,7 @@ export default function Footer() {
 
         {/* Community */}
         <div>
-          <h4 className="font-semibold text-gray-500 mb-2">Community</h4>
+          <h4 className="font-semibold text-gray-500 mb-4">Community</h4>
           <ul className="space-y-2">
             <li className="flex items-center gap-1 hover:text-[#85c226]">
               <FaDiscord /> Discord
