@@ -5,7 +5,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="w-full sticky top-0 bg-white shadow-lg z-50">
-      <div className="max-w-7xl mx-auto  py-3 flex items-center justify-between  ">
+      <div className="max-w-7xl mx-auto  py-3 flex items-center justify-between cursor-pointer ">
         
         {/* Left: Logo and Links */}
         <div className="flex items-center space-x-10">

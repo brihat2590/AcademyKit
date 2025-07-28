@@ -30,7 +30,7 @@ export default function Firstpage() {
             <button className="bg-[#0c0c3d] text-white px-6 py-2.5 rounded-md font-semibold shadow transition border-3 mt-4 hover:border-[#30325c] hover:bg-[#fefefe] hover:text-[#30325c]">
               Download Now
             </button>
-            <button className="bg-[#d5f5a2] text-[#0c0c3d] px-6 py-2.5 rounded-md font-semibold shadow transition border-[#0c0c3d] border-3 mt-4 hover:border-[#97cb45]">
+            <button className="bg-[#c2e092] text-[#0c0c3d] px-6 py-2.5 rounded-md font-semibold shadow transition border-[#0c0c3d] border-3 mt-4 hover:border-[#97cb45]">
               Learn more <span className="">→</span>
 
             </button>

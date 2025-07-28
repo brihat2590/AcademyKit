@@ -17,7 +17,7 @@ export default function ProductivityBanner() {
           <button className="px-5 py-2 rounded-md bg-white text-[#0c0c3d] font-semibold shadow  transition  hover:border-[#6a9b29] border-3">
             Learn how
           </button>
-          <button className="px-5 py-2 rounded-md bg-[#d5f5a2] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29]">
+          <button className="px-5 py-2 rounded-md bg-[#c2e092] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29]">
             Get started
           </button>
         </div>
