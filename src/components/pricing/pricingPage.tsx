@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import PricingTable from './pricingTable';
 
 export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -60,7 +61,7 @@ export default function PricingSection() {
             
           </div>
 
-          <div className=" rounded-xl shadow-lg p-8 w-full max-w-xs border border-gray-200 bg-[#c2e092]">
+          <div className=" rounded-xl shadow-lg p-8 w-full sm:max-w-xs border border-gray-200 bg-[#c2e092]">
             <div className="mb-6">
               <div className="flex items-center">
                 <h3 className="text-xl font-bold text-gray-900 mr-2">Essential</h3>
@@ -86,7 +87,7 @@ export default function PricingSection() {
 
 
           {/* Premium Plan */}
-          <div className="bg-[#c2e092] rounded-xl shadow-lg p-8 w-full max-w-xs border-2 relative">
+          <div className="bg-[#c2e092] rounded-xl shadow-lg p-8 w-full sm:max-w-xs border-2 relative">
             <div className=" mt-2 mr-2  absolute top-0 right-0 bg-white  text-gray-700 text-sm font-bold px-4 py-2 rounded-bl-lg rounded-xl">
               Popular
             </div>
@@ -111,6 +112,7 @@ export default function PricingSection() {
           </div>
         </div>
       </div>
+      <PricingTable/>
 
         {/* Add-ons Section */}
         <div className="max-w-5xl flex flex-col mt-20 ">
@@ -122,19 +124,50 @@ export default function PricingSection() {
               Unlock additional features with our premium add-on package! Tailored for those seeking extra flexibility and enhanced functionality. Elevate your experience and maximize value.
             </p>
           </div>
+          
 
           
 
-        <div className="bg-[#c2e092] rounded-xl shadow-lg p-8 w-full mx-auto border border-gray-200 max-w-2xl ">
-
-
-                <h2 className='flex items-center text-5xl font-semibold '>Simple transparent Pricing</h2>
+          <div className="bg-[#c2e092] rounded-xl shadow-lg p-8 w-full mx-auto border border-gray-200 max-w-2xl ">
 
 
 
+            <div className='flex flex-col gap-3'>
+
+              <div>
+                //image yesma
 
 
-                </div>
+              </div>
+              <div className='text-gray-900 font-semibold'>
+
+              Mobile App
+
+              </div>
+              <div className='mt-1  text-gray-900'>
+
+              Learn on-the-go with our mobile app add-on. Access courses, collaborate, and stay engaged anytime, anywhere, with seamless integration for ultimate convenience.
+
+
+              </div>
+
+
+
+            </div>
+
+
+                
+
+
+
+
+
+          </div>
+
+
+          
+
+        
         
 
           
@@ -142,6 +175,15 @@ export default function PricingSection() {
           
 
         </div>
+
+        <div className="flex justify-center sm:justify-end  max-w-lg gap-8  mt-8 md:ml-10 ">
+            <button className="bg-gray-900 text-white  px-6 rounded-sm font-medium hover:bg-white hover:text-gray-900 hover:border-gray-900 border-3  transition duration-500 py-2">
+              Book an Appointment
+            </button>
+            <button className="text-[#0a0b34] bg-[#c2e092] border-3 border-[#0a0b34]  transition duration-500 rounded-sm  px-6 hover:border-[#c2e092] ">
+              Try Now!
+            </button>
+          </div>
 
         
       

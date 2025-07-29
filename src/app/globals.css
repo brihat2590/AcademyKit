@@ -41,6 +41,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --color-primary: #f9fcec;   /* your primary color */
+  --color-secondary: #0a0b34; /* your secondary color */
+}
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
