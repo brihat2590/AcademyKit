@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  image:{
+  images:{
     domains:['*']
   }
   /* config options here */

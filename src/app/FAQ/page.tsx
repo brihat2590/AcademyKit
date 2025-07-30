@@ -72,39 +72,46 @@ const FAQ = () => {
       </div>
 
       {/* FAQ Flex Wrap */}
-      <div className="columns-1 md:columns-2 gap-10 space-y-10 p-10  ">
-  {faqs.map((faq, index) => {
-    const isOpen = openIndex === index;
-    return (
-      <div key={index} className="break-inside-avoid border-b border-border pb-6 ">
-        <button
-          onClick={() => toggleFaq(index)}
-          className="w-full flex justify-between items-start gap-4 group"
-        >
-          <h3 className="text-lg  text-foreground text-left group-hover:text-primary transition-colors duration-200">
-            {faq.question}
-          </h3>
-          <div className={`w-8 h-8 flex items-center justify-center rounded-full bg-accent text-foreground shrink-0 transition-all duration-200 ease-out transform ${isOpen ? 'rotate-180 bg-primary text-primary-foreground' : 'hover:bg-primary/10 hover:scale-105'}`}>
-            {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-          </div>
-        </button>
-        <div
-          className={`transition-all duration-200 ease-out mt-4 ${
-            isOpen ? 'opacity-100' : 'opacity-0 h-0'
-          }`}
-          style={{
-            height: isOpen ? 'auto' : '0px',
-            overflow: isOpen ? 'visible' : 'hidden',
-          }}
-        >
-          <p className="text-muted-foreground leading-relaxed pr-2">
-            {faq.answer}
-          </p>
+      <div className="columns-1 md:columns-2 gap-10 space-y-10 p-10">
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={index}
+                className="break-inside-avoid border-b border-gray-300 pb-6"
+              >
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className="w-full flex justify-between items-start gap-4 group text-left"
+                >
+                  <h3 className="text-lg text-gray-900  transition-colors duration-200">
+                    {faq.question}
+                  </h3>
+                  <div
+                    className={`w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-900 shrink-0 transition-all duration-200 ease-out transform ${
+                      isOpen
+                        ? "rotate-180 bg-[#85c226] text-white"
+                        : "hover:bg-[#85c226]/10 hover:scale-105"
+                    }`}
+                  >
+                    {isOpen ? (
+                      <Minus className="w-4 h-4 text-black" />
+                    ) : (
+                      <Plus className="w-4 h-4" />
+                    )}
+                  </div>
+                </button>
+
+                {isOpen && (
+                  <div className="mt-4 pr-2">
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
-      </div>
-    );
-  })}
-</div>
 
       
       
