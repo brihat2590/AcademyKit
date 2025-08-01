@@ -200,7 +200,7 @@ export default function SelfHostedLms() {
               onClick={(e) => handleNavClick(s.id, e)}
               className={`px-6 py-3 rounded-md text-sm font-medium transition-colors ${
                 activeId === s.id
-                  ? "text-white bg-green-500"
+                  ? "text-gray-900 bg-[#c2e092]"
                   : "text-gray-700 hover:bg-gray-100"
               }`}
             >
