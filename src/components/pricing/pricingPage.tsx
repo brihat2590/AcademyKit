@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import PricingTable from './pricingTable';
+import { GiZipper } from 'react-icons/gi';
 
 export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -135,7 +136,7 @@ export default function PricingSection() {
             <div className='flex flex-col gap-3'>
 
               <div>
-                //image yesma
+                <GiZipper/>
 
 
               </div>
@@ -146,7 +147,8 @@ export default function PricingSection() {
               </div>
               <div className='mt-1  text-gray-900'>
 
-              Learn on-the-go with our mobile app add-on. Access courses, collaborate, and stay engaged anytime, anywhere, with seamless integration for ultimate convenience.
+              Learn on-the-go with our mobile app add-on. Access courses, <br></br>
+              collaborate, and stay engaged anytime, anywhere, with seamless integration for ultimate convenience.
 
 
               </div>
