@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronRight } from "lucide-react";
 import React, { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
@@ -24,7 +25,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full sticky top-0 bg-white shadow-lg z-50">
+      <nav className="w-full sticky top-0 bg-white shadow-lg z-50 font-poppins">
         <div className="max-w-7xl mx-auto py-3 flex items-center justify-between cursor-pointer">
           <div className="flex items-center space-x-10">
             <img src="/logo.png" alt="AcademyKit Logo" className="h-9" />
@@ -166,92 +167,99 @@ export default function Navbar() {
           ) : (
             // Your original Resources dropdown content
             <div className="flex max-w-full mx-auto">
-              <div className="w-1/2 bg-[#eef7d4] px-16 py-12 text-indigo-950 flex justify-end gap-7  ">
-                <div className="flex flex-col items-center">
-                  <h3 className="font-bold text-lg mb-6">Company</h3>
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="bg-[#b6df87] p-2 rounded-full">🐾</div>
-                    <div>
-                      <p className="font-bold">About Us</p>
-                      <p className="text-sm">Learn what inspired<br></br> AcademyKit.</p>
-                    </div>
-                  </div>
+              <div className="w-1/2 bg-[#eef7d4] px-16 py-16 text-indigo-950 flex justify-end gap-10">
+  {/* Company Section */}
+  <div className="flex flex-col items-start">
+    <h3 className="font-semibold text-lg mb-8">Company</h3>
 
-                  <div className="flex items-center gap-4 mb-12">
-                    <div className="bg-[#b6df87] p-2 rounded-full">💬</div>
-                    <div>
-                      <p className="font-bold flex items-center gap-2">
-                        FAQs{" "}
-                        {/* <span className="bg-indigo-950 text-white text-xs px-2 py-0.5 rounded-full">
-                          Your Query Answered!
-                        </span> */}
-                      </p>
-                      <p className="text-sm">Get answers to all<br></br> your questions</p>
-                    </div>
-                  </div>
+    <div className="flex items-start gap-4  hover:bg-white transition rounded-xl p-5 cursor-pointer">
+      <div className="bg-[#b6df87] p-3 rounded-full">🐾</div>
+      <div>
+        <p className="font-semibold">About Us</p>
+        <p className="text-sm font-extralight leading-relaxed">
+          Learn what inspired <br /> AcademyKit.
+        </p>
+      </div>
+    </div>
 
-                  
-                </div>
-                <div className="flex flex-col items-center">
-                <h3 className="font-bold text-lg mb-6">Get Started</h3>
+    <div className="flex items-start gap-4 hover:bg-white transition rounded-xl p-5 cursor-pointer">
+      <div className="bg-[#b6df87] p-3 rounded-full">💬</div>
+      <div>
+        <p className="font-semibold">FAQs</p>
+        <p className="text-sm font-extralight leading-relaxed">
+          Get answers to all <br /> your questions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Get Started Section */}
+  <div className="flex flex-col items-start">
+    <h3 className="font-semibold text-lg mb-8">Get Started</h3>
+
+    <div className="flex items-start gap-4  hover:bg-white transition rounded-xl p-5 cursor-pointer">
+      <div className="bg-[#b6df87] p-3 rounded-full">💵</div>
+      <div>
+        <p className="font-semibold">Pricing</p>
+        <p className="text-sm font-extralight leading-relaxed">
+          Start free and upgrade<br></br> after you are happy.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-4 hover:bg-white transition rounded-xl p-5 cursor-pointer">
+      <div className="bg-[#b6df87] p-3 rounded-full">🔍</div>
+      <div>
+        <p className="font-semibold">Documentation</p>
+        <p className="text-sm font-extralight leading-relaxed">
+          Get started here for <br></br>all help and guides
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-                  <div className="flex flex-col ">
-
-                  <p className="font-bold">Documentation</p>
-                  <p className="text-sm">Get started here<br></br> for all help & guides.</p>
-                  </div>
+              
 
 
-                  <div className="flex items-start gap-4">
-                    <div className="text-lg">🔍</div>
-                    
+              <div className="w-1/2 bg-gray-50 px-10 py-12 text-indigo-950 flex flex-col items-start  ">
+                <h3 className="font-light text-md mb-6 ">Resources</h3>
 
-                    
-                    <div>
-
-                    
-                      <p className="font-bold">Documentation</p>
-                      <p className="text-sm">Get started here<br></br> for all help & guides.</p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <div className="w-1/2 bg-white px-10 py-12 text-indigo-950 flex flex-col items-start ">
-                <h3 className="font-bold text-lg mb-6 ">Resources</h3>
-
-                <div className="flex items-start gap-6 mb-8">
+                <div className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
                   <img
                     src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f91_nav-image-06.jpg"
-                    className="w-24 h-16 rounded object-cover"
+                    className="w-45 h-25 rounded object-cover"
                     alt="Get started"
                   />
                   <div>
-                    <p className="font-bold">How to get started</p>
-                    <p className="text-sm">Get an overview of the basics and start building.</p>
+                    <p className="font-semibold ">How to get started</p>
+                    <p className=" font-extralight text-sm ">Jump right in - Get an overview of the basics and<br></br> start building.</p>
                     <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-6">
+                <div className="flex items-start gap-6 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
                   <img
                     src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f8a_image-06.jpeg"
-                    className="w-24 h-16 rounded object-cover"
+                    className="w-45 h-25 rounded object-cover"
                     alt="Advanced features"
                   />
                   <div className="">
-                    <p className="font-bold">Advanced features</p>
-                    <p className="text-sm">Explore advanced analytics, shortcuts, and more.</p>
+                    <p className="font-semibold">Advanced features</p>
+                    <p className="text-sm font-extralight">Explore advanced analytics, shortcuts, and more.</p>
                     <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
                   </div>
                 </div>
+                <div className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline">
+  See all <ChevronRight className="w-4 h-4" />
+</div>
               </div>
+              
             </div>
           )}
-
-          <div className="w-full bg-[#0000f0] text-white px-6 py-4 flex items-center justify-between text-sm md:text-base">
+          <div className="w-full bg-[#0000f0]">
+          <div className="max-w-7xl mx-auto text-white px-6 py-6 flex items-center justify-between text-sm md:text-base ">
             <div className="font-medium">
               Ready to get started?{" "}
               <span className="font-bold underline cursor-pointer">Request for Demo</span>
@@ -272,6 +280,7 @@ export default function Navbar() {
               </span>
             </div>
           </div>
+        </div>
         </div>
       )}
     </>
