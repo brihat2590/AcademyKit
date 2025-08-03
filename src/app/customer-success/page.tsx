@@ -329,10 +329,10 @@ export default function page(){
         {/* Left Content */}
         <div className="text-center md:text-left max-w-xl">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#0b0c2a] mb-4">
-            Start Today!
+            Build your Product <br></br>University now!
           </h2>
           <p className="text-[#0b0c2a] text-base md:text-lg">
-            Join businesses that have taken advantage of AcademyKit for their product success.
+            Join businesses that have been increasing their product value with AcademyKit.
           </p>
         </div>
 
