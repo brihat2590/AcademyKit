@@ -10,7 +10,7 @@ export default function AboutUs(){
             <section className="w-full bg-[#0a0a32] py-25 flex flex-col items-center text-center">
                 <h2 className="mt-8 text-white text-4xl md:text-7xl font-extrabold leading-tight">
                     Start working with us{" "}<br></br>
-                    <span className="text-[#A5EEC5] relative inline-block">
+                    <span className="text-[#b1ebb8] relative inline-block">
                     today
                     <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
                         {/* Decorative lines below the word "today" */}
@@ -27,53 +27,56 @@ export default function AboutUs(){
                     </span>
                     </span>
                 </h2>
-                <button className="mt-10 px-6 py-1 bg-[#A5EEC5] text-[#0a0a32] font-semibold rounded shadow hover:bg-[#91d8b3] transition">
+                <button className="mt-10 px-6 py-1.5 bg-[#c3e192] text-[#0a0a32] font-semibold rounded-md shadow border-3 border-gray-900 hover:border-green-700 transition">
                     Get Started
                 </button>
                 </section>
 
 
                 <AboutSection/>
-                <section className="relative bg-[#fbfef5] py-20 px-4 ">
-                      <div className="relative max-w-7xl mx-auto bg-[#0a0b34] text-white rounded-3xl px-8 py-25 text-center overflow-hidden">
+                <section className="relative bg-[#fbfef5] py-20 px-4 overflow-visible">
+                      <div className="relative max-w-7xl mx-auto bg-[#0a0b34] text-white rounded-3xl px-8 py-24 text-center overflow-visible z-10">
                         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-                          Your Journey to Success Starts Here
+                          YOur Journey to Success Starts Here
                         </h2>
-                        <p className="text:xs sm:text-[17px] max-w-4xl mx-auto text-gray-400 mb-8">
+                        <p className="text:xs sm:text-[14px] max-w-2xl mx-auto text-gray-300 mb-8">
                         Join the ranks of forward-thinking businesses that are transforming training with AcademyKit LMS. Say goodbye to complexity and hello to simplicity. Say goodbye to inefficiency and hello to productivity.
                         Say hello to AcademyKit– where training meets innovation.
+                          
                         </p>
-                        <div className="flex justify-center ">
+                        <div className="flex justify-center gap-4">
                           
                           <button className="px-5 py-2 rounded-md bg-[#c2e092] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29] border-[#0c0c3d]">
                             Try Now!
                           </button>
                         </div>
                 
-                        {/* Floating shapes */}
+                        {/* Floating shapes – large + popped out further */}
                         <Image
                           src="/shapes/shape1.png"
                           alt="shape1"
-                          width={150}
-                          height={150}
-                          className="absolute bottom-[-40px] left-[-40px] w-32 h-32"
+                          width={220}
+                          height={220}
+                          className="absolute bottom-[-60px] left-[-40px] w-60 h-60 z-20"
                         />
                         <Image
                           src="/shapes/shape2.png"
                           alt="shape2"
-                          width={120}
-                          height={120}
-                          className="absolute top-[-40px] right-[10%] w-28 h-28"
+                          width={200}
+                          height={200}
+                          className="absolute top-[-80px] right-[8%] w-50 h-50 z-20"
                         />
                         <Image
                           src="/shapes/shape3.png"
                           alt="shape3"
-                          width={120}
-                          height={120}
-                          className="absolute bottom-[-30px] right-[-30px] w-32 h-32"
+                          width={210}
+                          height={210}
+                          className="absolute bottom-[-60px] right-[-60px] w-56 h-56 z-20"
                         />
                       </div>
                     </section>
+                
+                    
 
 
 
