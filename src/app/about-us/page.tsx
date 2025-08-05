@@ -1,11 +1,13 @@
 import AboutSection from "@/components/aboutUs/MainAbout";
+import { Check } from "lucide-react";
 import Image from "next/image";
+
 
 export default function AboutUs(){
     return(
         <div>
 
-            <section className="w-full bg-[#0a0a32] py-20 flex flex-col items-center text-center">
+            <section className="w-full bg-[#0a0a32] py-25 flex flex-col items-center text-center">
                 <h2 className="mt-8 text-white text-4xl md:text-7xl font-extrabold leading-tight">
                     Start working with us{" "}<br></br>
                     <span className="text-[#A5EEC5] relative inline-block">

@@ -5,14 +5,14 @@ const PricingTable = () => {
   return (
     <div className="w-full max-w-7xl mx-auto bg-[#fbfef5] px-2 mt-9">
       {/* Header Row */}
-      <div className="grid grid-cols-3 border-b border-gray-200">
+      <div className="grid grid-cols-[1.6fr_1.2fr_1.2fr] border-b border-gray-200">
         <div className="px-6 py-4 text-left">
           <h3 className="text-lg font-medium text-gray-900">Overview</h3>
         </div>
-        <div className="px-8 py-4 text-center border-l border-gray-100 flex justify-center transform translate-x-10">
+        <div className="px-6 py-4 text-center   flex justify-center">
           <h3 className="text-lg font-medium text-gray-900">Essential (Free)</h3>
         </div>
-        <div className="px-6 py-4 text-center border-l border-gray-100 flex justify-center">
+        <div className="px-6 py-4 text-center  flex justify-center">
           <h3 className="text-lg font-medium text-gray-900">Premium</h3>
         </div>
       </div>
@@ -49,8 +49,8 @@ const PricingTable = () => {
         return (
           <div
             key={index}
-            className={`grid grid-cols-3 border-b border-gray-100 ${
-              isSectionHeader ? 'bg-gray-50' : ''
+            className={`grid grid-cols-[1.6fr_1.2fr_1.2fr] border-b   border-gray-200 ${
+              isSectionHeader ? '' : ''
             }`}
           >
             <div className="px-6 py-4">
@@ -63,20 +63,20 @@ const PricingTable = () => {
               </span>
             </div>
 
-            <div className="px-6 py-4 border-l border-gray-50 flex justify-center transform translate-x-10 text-center">
+            <div className="px-6 py-4 border-x border-gray-200 flex justify-center text-center">
               {essential === true ? (
-                <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-                  <Check className="w-4 h-4 text-white" strokeWidth={2.5} />
+                <div className="w-6 h-6 text-gray-900 rounded flex items-center justify-center">
+                  <Check className="w-6 h-6" strokeWidth={2.5} />
                 </div>
               ) : (
                 <span className="text-gray-900 text-sm">{essential}</span>
               )}
             </div>
 
-            <div className="px-6 py-4 border-l border-gray-50 flex justify-center text-center">
+            <div className="px-6 py-4 border-r border-gray-200 flex justify-center text-center">
               {premium === true ? (
-                <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-                  <Check className="w-4 h-4 text-white" strokeWidth={2.5} />
+                <div className="w-6 h-6 rounded flex items-center justify-center">
+                  <Check className="w-6 h-6 text-gray-900" strokeWidth={2.5} />
                 </div>
               ) : (
                 <span className="text-gray-900 text-sm">{premium}</span>
