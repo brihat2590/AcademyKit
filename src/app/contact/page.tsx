@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "sonner";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,8 @@ export default function ContactPage() {
     message: "",
     agree: false,
   });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -32,10 +35,38 @@ export default function ContactPage() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Message submitted successfully!");
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        toast.success("Message sent successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          topic: "",
+          message: "",
+          agree: false,
+        });
+      } else {
+        const { error } = await res.json();
+        toast.error("Error: " + error);
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("An error occurred while sending the message.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -154,9 +185,14 @@ export default function ContactPage() {
 
           <button
             type="submit"
-            className="bg-gray-900 border-3 border-gray-900 hover:bg-white hover:text-gray-900  text-white py-3 px-6 rounded-md font-medium transition w-full duration-500 ease-in-out"
+            disabled={!formData.agree || loading}
+            className={`${
+              formData.agree && !loading
+                ? "bg-gray-900 hover:bg-white hover:text-gray-900 cursor-pointer"
+                : "bg-gray-900 text-white cursor-not-allowed"
+            } border-3 border-gray-900 text-white py-3 px-6 rounded-md font-medium transition w-full duration-500 ease-in-out`}
           >
-            Send message
+            {loading ? "Sending..." : "Send message"}
           </button>
         </form>
       </div>
