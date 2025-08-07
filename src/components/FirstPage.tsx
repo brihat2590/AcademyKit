@@ -12,7 +12,7 @@ export default function Firstpage() {
             Self-hosted solution
           </span>
 
-          <h2 className="text-[#0c0c3d] text-4xl sm:text-6xl font-semibold tracking-normal leading-18 mb-6">
+          <h2 className="text-[#0c0c3d] text-4xl sm:text-6xl font-semibold md:tracking-normal md:leading-18 mb-6">
             Beyond just training: Join <br />
             us for an immersive<br />
             experience that<br />

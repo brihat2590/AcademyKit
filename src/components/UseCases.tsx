@@ -73,7 +73,7 @@ const UseCases = () => {
             <div className="relative w-full max-w-md">
               {/* Mobile Image - Fixed Dimensions */}
               <div className="lg:hidden w-full flex justify-center">
-                <div className="w-64 h-96 rounded-lg overflow-hidden">
+                <div className="w-96 h-96 rounded-lg overflow-hidden">
                   <img 
                     src={activeImage} 
                     alt={activeSection} 

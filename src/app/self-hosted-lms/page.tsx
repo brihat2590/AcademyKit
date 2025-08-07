@@ -154,40 +154,7 @@ export default function SelfHostedLms() {
         </div>
       </div>
 
-      {/* Feature Cards */}
-      <section className="w-full bg-[#fbfef5] py-16 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-          {features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 bg-white"
-            >
-              <div className="bg-lime-100 p-4 flex justify-center items-center">
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className="rounded-md w-full object-cover"
-                />
-              </div>
-
-              <div className="bg-[#0A0A2C] text-white px-6 py-6 flex flex-col justify-between h-full">
-                <div>
-                  <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
-                  <p className="text-sm text-gray-200">{feature.description}</p>
-                </div>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="text-green-400 font-semibold text-sm flex items-center gap-2 hover:underline"
-                  >
-                    Learn more <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* Scroll Sync Section */}
       <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto">
@@ -261,8 +228,43 @@ export default function SelfHostedLms() {
               className="rounded-lg w-full"
             />
           </section>
+          
         </div>
       </div>
+      {/* Feature Cards */}
+      <section className="w-full bg-[#fbfef5] py-16 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+          {features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 bg-white"
+            >
+              <div className="bg-lime-100 p-4 flex justify-center items-center">
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="rounded-md w-full object-cover"
+                />
+              </div>
+
+              <div className="bg-[#0A0A2C] text-white px-6 py-6 flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                  <p className="text-sm text-gray-200">{feature.description}</p>
+                </div>
+                <div className="mt-6">
+                  <a
+                    href="#"
+                    className="text-green-400 font-semibold text-sm flex items-center gap-2 hover:underline"
+                  >
+                    Learn more <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
