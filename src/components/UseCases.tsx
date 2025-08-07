@@ -32,7 +32,7 @@ const UseCases = () => {
           <p className="font-medium mb-2 text-sm tracking-wide text-gray-900">
             Use Cases
           </p>
-          <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
+          <h1 className="text-3xl sm:text-4xl py-2 font-semibold text-gray-900 mb-4">
             See how you can get real value
           </h1>
           <p className="text-gray-900 text-lg">

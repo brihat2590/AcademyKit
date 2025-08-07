@@ -19,7 +19,7 @@ export default function FAQ() {
 
         <div className="grid md:grid-cols-3 gap-10 text-sm md:text-base">
           {/* FAQ 1 */}
-          <div>
+          <div className="mb-8">
             <h3 className="font-semibold mb-2">Is It Really Free?</h3>
             <p className="">
               Yes, if your team is small, then AcademyKit is free for you for a
@@ -29,7 +29,7 @@ export default function FAQ() {
           </div>
 
           {/* FAQ 2 */}
-          <div>
+          <div className="mb-8">
             <h3 className="font-semibold mb-2">
               Can You Provide Technical Support?
             </h3>
@@ -47,7 +47,7 @@ export default function FAQ() {
           </div>
 
           {/* FAQ 3 */}
-          <div>
+          <div className="mb-8">
             <h3 className="font-semibold mb-2">
               How Many Users Can The Free Version Accommodate?
             </h3>
@@ -59,7 +59,7 @@ export default function FAQ() {
           </div>
 
           {/* FAQ 4 */}
-          <div>
+          <div className="mb-8">
             <h3 className="font-semibold mb-2">
               Is AcademyKit Suitable For My Organization?
             </h3>

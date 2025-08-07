@@ -3,7 +3,65 @@
 import { ChevronRight, ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FaBrain, FaPlayCircle, FaSearchengin } from "react-icons/fa";
+import { FaPersonCircleCheck } from "react-icons/fa6";
+import { FiDollarSign } from "react-icons/fi";
+import { GiProgression } from "react-icons/gi";
+import { MdOnDeviceTraining } from "react-icons/md";
 
+const Solutions=[
+  {
+    icon:<FaPersonCircleCheck size={20}/>,
+    title:"Self-Hosted LMS",
+    description:"Use beautiful self hosted free LMS.",
+    href:"/self-hosted-lms"
+  },
+  {
+    icon:<MdOnDeviceTraining size={20}/>,
+    title:"Training Management",
+    description:"Manage your trainer, trainee and admin.",
+    href:"/training-management"
+  },
+  {
+    icon:<GiProgression size={20}/>,
+    title:"Progress Reporting",
+    description:"Reports and analytics for improved decisions",
+    href:"/analytics"
+  },
+  {
+    icon:<FaBrain size={20}/>,
+    title:"AI Integrated",
+    description:"Smart tools for enhanced learning experiences",
+    href:"/ai-integrated"
+  },
+   
+]
+const Solutions2=[
+  {
+    icon:<FaPersonCircleCheck size={20}/>,
+    title:"Sales Training",
+    description:"Enhance sales team effectiveness",
+    href:"/capacity-building"
+  },
+  {
+    icon:<MdOnDeviceTraining size={20}/>,
+    title:"On-boarding",
+    description:"Simplify employee onboarding",
+    href:"/on-boarding"
+  },
+  {
+    icon:<GiProgression size={20}/>,
+    title:"Employee Training",
+    description:"Empower workforce with continuous learning",
+    href:"/employee-training"
+  },
+  {
+    icon:<FaBrain size={20}/>,
+    title:"Customer Success",
+    description:"Elevate customer engagement",
+    href:"/customer-success"
+  }
+]
 export default function Navbar() {
   const [hoveredDropdown, setHoveredDropdown] = useState<"resources" | "solutions" | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -114,51 +172,50 @@ export default function Navbar() {
                     <div className="space-y-4">
                       <div>
                         <div className="font-semibold text-sm text-indigo-950 mb-3">Why AcademyKit?</div>
-                        {[
-                          ["🧠", "Self-Hosted LMS", "Use beautiful self hosted free LMS.","/self-hosted-lms"],
-                          ["🗂️", "Training Management", "Manage your trainer, trainee and admin.","/training-management"],
-                          ["📊", "Progress Reporting", "Reports and analytics for improved decisions","/analytics"],
-                          ["🤖", "AI Integrated", "Smart tools for enhanced learning experiences","/ai-integrated"],
-                        ].map(([icon, title, desc,href]) => (
-                          <Link href={href} key={title} onClick={()=>{
-                            setHoveredDropdown(null)
-                            
-                            setMobileDropdownOpen(null);
-                            setMobileMenuOpen(false)
-                          }} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
-                            <div className="bg-[#b6df87] p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
-                              <span className="text-lg">{icon}</span>
-                            </div>
-                            <div>
-                              <p className="text-sm font-semibold text-indigo-950">{title}</p>
-                              <p className="text-xs font-light text-gray-600 mt-1">{desc}</p>
-                            </div>
-                          </Link>
-                        ))}
+                        {Solutions.map(({ icon: Icon, title, description, href }) => (
+  <Link
+    href={href}
+    key={title}
+    onClick={() => {
+      setHoveredDropdown(null);
+      setMobileDropdownOpen(null);
+      setMobileMenuOpen(false);
+    }}
+    className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer"
+  >
+    <div className="p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center ">
+      {Icon}
+    </div>
+    <div>
+      <p className="text-sm font-semibold text-indigo-950">{title}</p>
+      <p className="text-xs font-light text-gray-600 mt-1">{description}</p>
+    </div>
+  </Link>
+))}
                       </div>
                       
                       <div>
                         <div className="font-semibold text-sm text-indigo-950 mb-3">Use Cases</div>
-                        {[
-                          ["💼", "Sales Training", "Enhance sales team effectiveness","/capacity-building"],
-                          ["🚀", "On-boarding", "Simplify employee onboarding","/on-boarding"],
-                          ["🎓", "Employee Training", "Empower workforce with continuous learning","/employee-training"],
-                          ["💬", "Customer Success", "Elevate customer engagement","/customer-success"],
-                        ].map(([icon, title, desc,href]) => (
-                          <Link href={href} key={title} onClick={()=>{
-                            setHoveredDropdown(null);
-                            setMobileDropdownOpen(null);
-                            setMobileMenuOpen(false)
-                          }} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
-                            <div className="bg-[#b6df87] p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
-                              <span className="text-lg">{icon}</span>
-                            </div>
-                            <div>
-                              <p className="text-sm font-semibold text-indigo-950">{title}</p>
-                              <p className="text-xs font-light text-gray-600 mt-1">{desc}</p>
-                            </div>
-                          </Link>
-                        ))}
+                        {Solutions2.map(({ icon: Icon, title, description, href }) => (
+  <Link
+    href={href}
+    key={title}
+    onClick={() => {
+      setHoveredDropdown(null);
+      setMobileDropdownOpen(null);
+      setMobileMenuOpen(false);
+    }}
+    className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer"
+  >
+    <div className="p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
+      {Icon}
+    </div>
+    <div>
+      <p className="text-sm font-semibold text-indigo-950">{title}</p>
+      <p className="text-xs font-light text-gray-600 mt-1">{description}</p>
+    </div>
+  </Link>
+))}
                       </div>
                     </div>
                   </div>
@@ -184,15 +241,13 @@ export default function Navbar() {
                     <div className="space-y-4">
                       <div>
                         <div className="font-semibold text-sm text-indigo-950 mb-3">Company</div>
-                        {[
+                        
+                      </div>
+                     {[
                           ["🐾", "About Us", "Learn what inspired AcademyKit.","/about-us"],
                           ["💬", "FAQs", "Get answers to all your questions.","/FAQ"],
                         ].map(([icon, title, desc,href]) => (
-                          <Link href={href} key={title} onClick={()=>{
-                            setHoveredDropdown(null);
-                            setMobileDropdownOpen(null);
-                            setMobileMenuOpen(false)
-                          }} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
+                          <Link href={href} key={title} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
                             <div className="bg-[#b6df87] p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
                               <span className="text-lg">{icon}</span>
                             </div>
@@ -200,9 +255,9 @@ export default function Navbar() {
                               <p className="text-sm font-semibold text-indigo-950">{title}</p>
                               <p className="text-xs font-light text-gray-600 mt-1">{desc}</p>
                             </div>
-                          </Link>
+                          </Link>  
                         ))}
-                      </div>
+                    
                       
                       <div>
                         <div className="font-semibold text-sm text-indigo-950 mb-3">Get Started</div>
@@ -223,8 +278,8 @@ export default function Navbar() {
                         <Link href={"/pricing"} onClick={()=>{
                           setMobileMenuOpen(false);
                         }} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
-                            <div className="bg-[#b6df87] p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
-                              <span className="text-lg">💵</span>
+                            <div className=" p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
+                              <span className="text-lg"><FiDollarSign/></span>
                             </div>
                             <div>
                               <p className="text-sm font-semibold text-indigo-950">Pricing</p>
@@ -234,8 +289,8 @@ export default function Navbar() {
                           <a href={"https://docs.academykit.co/app-documentation/introduction"} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer" onClick={()=>{
                             setMobileMenuOpen(false)
                           }}>
-                            <div className="bg-[#b6df87] p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
-                              <span className="text-lg">🔍</span>
+                            <div className=" p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
+                              <span className="text-lg"><FaSearchengin/></span>
                             </div>
                             <div>
                               <p className="text-sm font-semibold text-indigo-950">Documentation</p>
@@ -301,55 +356,51 @@ export default function Navbar() {
                   <div className="flex  w-full max-w-2xl justify-end gap-8">
                     <div className="flex flex-col items-start">
                       <h3 className="font-semibold text-lg text-indigo-950 mb-4">Why AcademyKit?</h3>
-                      {[
-                        ["🧠", "Self-Hosted LMS", "Use beautiful self hosted free LMS.","/self-hosted-lms"],
-                        ["🗂️", "Training Management", "Manage your trainer, trainee and admin.","/training-management"],
-                        ["📊", "Progress Reporting", "Reports and analytics for improved decisions","/analytics"],
-                        ["🤖", "AI Integrated", "Smart tools for enhanced learning experiences","/ai-integrated"],
-                      ].map(([icon, title, desc,href]) => (
-                        <Link href={href}
-                        onClick={()=>{
-                          setHoveredDropdown(null)
-                        }}
-                          key={title} 
-                          className="flex items-start gap-4 hover:bg-white transition rounded-xl p-2 cursor-pointer w-full"
-                        >
-                          <div className="bg-[#b6df87] p-3 rounded-full min-w-[3rem] min-h-[3rem] flex items-center justify-center">
-                            <span className="text-xl">{icon}</span>
-                          </div>
-                          <div>
-                            <p className="font-semibold text-base text-indigo-950">{title}</p>
-                            <p className="text-sm font-light leading-relaxed text-gray-600 mt-1">{desc}</p>
-                          </div>
-                        </Link>
-                      ))}
+                      {Solutions.map(({ icon: Icon, title, description, href }) => (
+  <Link
+    href={href}
+    key={title}
+    onClick={() => {
+      setHoveredDropdown(null);
+      setMobileDropdownOpen(null);
+      setMobileMenuOpen(false);
+    }}
+    className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer"
+  >
+    <div className="p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
+      {Icon}
+    </div>
+    <div>
+      <p className="text-sm font-semibold text-indigo-950">{title}</p>
+      <p className="text-xs font-light text-gray-600 mt-1">{description}</p>
+    </div>
+  </Link>
+))}
+            
                     </div>
 
                     <div className="flex flex-col items-start">
                       <h3 className="font-semibold text-lg  text-indigo-950 mb-4">Use Cases</h3>
-                      {[
-                        ["💼", "Sales Training", "Enhance sales team effectiveness","/capacity-building"],
-                        ["🚀", "On-boarding", "Simplify employee onboarding","/on-boarding"],
-                        ["🎓", "Employee Training", "Empower workforce with continuous learning","/employee-training"],
-                        ["💬", "Customer Success", "Elevate customer engagement","/customer-success"],
-                      ].map(([icon, title, desc,href]) => (
-                        <Link href={href} 
-
-                          key={title} 
-                          className="flex items-start gap-4 hover:bg-white transition rounded-xl p-2 cursor-pointer w-full"
-                          onClick={()=>{
-                            setHoveredDropdown(null)
-                          }}
-                        >
-                          <div className="bg-[#b6df87] p-3 rounded-full min-w-[3rem] min-h-[3rem] flex items-center justify-center">
-                            <span className="text-xl">{icon}</span>
-                          </div>
-                          <div>
-                            <p className="font-semibold text-base text-indigo-950">{title}</p>
-                            <p className="text-sm font-light leading-relaxed text-gray-600 mt-1">{desc}</p>
-                          </div>
-                        </Link>
-                      ))}
+                      {Solutions2.map(({ icon: Icon, title, description, href }) => (
+  <Link
+    href={href}
+    key={title}
+    onClick={() => {
+      setHoveredDropdown(null);
+      setMobileDropdownOpen(null);
+      setMobileMenuOpen(false);
+    }}
+    className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer"
+  >
+    <div className="p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
+      {Icon}
+    </div>
+    <div>
+      <p className="text-sm font-semibold text-indigo-950">{title}</p>
+      <p className="text-xs font-light text-gray-600 mt-1">{description}</p>
+    </div>
+  </Link>
+))}
                     </div>
                   </div>
                 </div>
@@ -360,9 +411,14 @@ export default function Navbar() {
                 <a href={"https://docs.academykit.co/introduction"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
                     <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f91_nav-image-06.jpg"} className="w-45 h-25 rounded object-cover" />
                     <div>
-                      <p className="font-semibold">How to get started</p>
-                      <p className="font-extralight text-sm">Jump right in - Get an overview of the basics and start building.</p>
-                      <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
+                      <p className="">How to get started</p>
+                      <p className="font-extralight text-sm py-2">Jump right in - Get an overview of the basics and start building.</p>
+                      <div className="flex items-center gap-2">
+                        <p><FaPlayCircle/></p>
+
+                      <p className="text-indigo-950 font-semibold  text-sm mt-1">Learn More</p>
+                      </div>
+                      
                     </div>
                   </a>
                   <Link href={"/why"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer" onClick={()=>{
@@ -370,9 +426,13 @@ export default function Navbar() {
                   }}>
                     <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f8a_image-06.jpeg"} className="w-45 h-25 rounded object-cover" />
                     <div>
-                      <p className="font-semibold">Advanced Features</p>
-                      <p className="font-extralight text-sm">Explore advanced analytics, shortcuts, and more.</p>
-                      <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
+                      <p className="">Advanced Features</p>
+                      <p className="font-extralight text-sm py-2">Explore advanced analytics, shortcuts, and more.</p>
+                      <div className="flex items-center gap-2">
+                        <p><FaPlayCircle/></p>
+
+                      <p className="text-indigo-950 font-semibold  text-sm mt-1">Learn More</p>
+                      </div>
                     </div>
                   </Link>
                 <div className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline">
@@ -422,14 +482,14 @@ export default function Navbar() {
                     <Link href={"/pricing"} className="flex items-start gap-4 hover:bg-white transition rounded-xl p-3 cursor-pointer" onClick={()=>{
                       setHoveredDropdown(null)
                     }}>
-                        <div className="bg-[#b6df87] p-3 rounded-full">💵</div>
+                        <div className=" p-3 rounded-full"><FiDollarSign size={20}/></div>
                         <div>
                           <p className="font-semibold">Pricing</p>
                           <p className="text-sm font-extralight leading-relaxed">Start free and upgrade after you are happy.</p>
                         </div>
                       </Link>
-                      <a href={'https://docs.academykit.co/app-documentation/introduction'} className="flex items-start gap-4 hover:bg-white transition rounded-xl p-3 cursor-pointer">
-                        <div className="bg-[#b6df87] p-3 rounded-full">🔍</div>
+                      <a href={'https://docs.academykit.co/app-documentation/introduction'} className="flex items-center gap-4 hover:bg-white transition rounded-xl p-3 cursor-pointer">
+                        <div className=" p-3 rounded-full"><FaSearchengin size={20}/></div>
                         <div>
                           <p className="font-semibold">Documentation</p>
                           <p className="text-sm font-extralight leading-relaxed">Get Start here for all help and guides</p>
@@ -465,9 +525,13 @@ export default function Navbar() {
                 <a href={"https://docs.academykit.co/introduction"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
                     <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f91_nav-image-06.jpg"} className="w-45 h-25 rounded object-cover" />
                     <div>
-                      <p className="font-semibold">How to get started</p>
-                      <p className="font-extralight text-sm">Jump right in - Get an overview of the basics and start building.</p>
-                      <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
+                      <p className="">How to get started</p>
+                      <p className="font-extralight text-sm py-2">Jump right in - Get an overview of the basics and start building.</p>
+                      <div className="flex items-center gap-2">
+                        <p><FaPlayCircle/></p>
+
+                      <p className="text-indigo-950 font-semibold  text-sm mt-1">Learn More</p>
+                      </div>
                     </div>
                   </a>
                   <Link href={"/why"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer" onClick={()=>{
@@ -475,9 +539,13 @@ export default function Navbar() {
                   }}>
                     <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f8a_image-06.jpeg"} className="w-45 h-25 rounded object-cover" />
                     <div>
-                      <p className="font-semibold">Advanced Features</p>
-                      <p className="font-extralight text-sm">Explore advanced analytics, shortcuts, and more.</p>
-                      <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
+                      <p className="">Advanced Features</p>
+                      <p className="font-extralight text-sm py-2">Explore advanced analytics, shortcuts, and more.</p>
+                      <div className="flex items-center gap-2">
+                        <p><FaPlayCircle/></p>
+
+                      <p className="text-indigo-950 font-semibold  text-sm mt-1">Learn More</p>
+                      </div>
                     </div>
                   </Link>
                 <div className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline">
