@@ -77,8 +77,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative">
-      <nav className="w-full sticky top-0 z-50  bg-white shadow-lg  font-poppins">
+    <div className="relative mb-15 sm:mb-20">
+      <nav className="w-full fixed z-50  top-0  bg-white shadow-lg  font-poppins ">
         <div className="max-w-7xl mx-auto py-3 flex items-center justify-between cursor-pointer px-4 md:px-0">
           <div className="flex items-center space-x-10">
             <Link href={"/"}><img src="/logo.png" alt="AcademyKit Logo" className="h-9" /></Link>
@@ -247,7 +247,10 @@ export default function Navbar() {
                           ["🐾", "About Us", "Learn what inspired AcademyKit.","/about-us"],
                           ["💬", "FAQs", "Get answers to all your questions.","/FAQ"],
                         ].map(([icon, title, desc,href]) => (
-                          <Link href={href} key={title} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
+                          <Link href={href} key={title} onClick={()=>{
+                            
+                            setMobileMenuOpen(false)
+                          }} className="flex items-start gap-3 mb-3 p-2 hover:bg-white rounded-xl cursor-pointer">
                             <div className="bg-[#b6df87] p-2 rounded-full min-w-[2.5rem] min-h-[2.5rem] flex items-center justify-center">
                               <span className="text-lg">{icon}</span>
                             </div>

@@ -28,21 +28,21 @@ export default function ProductivityBanner() {
           alt="shape1"
           width={220}
           height={220}
-          className="hidden md:absolute bottom-[-60px] left-[-40px] w-60 h-60 z-20"
+          className="hidden md:block absolute bottom-[-60px] left-[-40px] w-60 h-60 z-20"
         />
         <Image
           src="/shapes/shape2.png"
           alt="shape2"
           width={200}
           height={200}
-          className="hidden md:absolute top-[-60px] right-[10%] w-50 h-50 z-20"
+          className="hidden md:block absolute top-[-60px] right-[10%] w-50 h-50 z-20"
         />
         <Image
           src="/shapes/shape3.png"
           alt="shape3"
           width={210}
           height={210}
-          className="hidden md:absolute bottom-[-60px] right-[-60px] w-56 h-56 z-20"
+          className="hidden md:block absolute bottom-[-60px] right-[-60px] w-56 h-56 z-20"
         />
       </div>
     </section>
