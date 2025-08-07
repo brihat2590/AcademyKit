@@ -7,7 +7,7 @@ const UseCases = () => {
     {
       title: "Customer Success",
       description: "Enable customers to get most of your product. Reduce churn and increase loyalty.",
-      image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6628f617b3f4736d8eb4c7c0_4-p-500.png" 
+      image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629dab4bdc74e5f13ffce0d_training-management-1.png" 
     },
     {
       title: "Employee Training", 
@@ -25,7 +25,7 @@ const UseCases = () => {
   const activeImage = sections.find(section => section.title === activeSection)?.image;
 
   return (
-    <div className="w-full bg-[#fbfef5]">
+    <div className="w-full bg-[#fbfef5] py-10 ">
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
@@ -69,7 +69,7 @@ const UseCases = () => {
 
           {/* Right Side - Responsive Image */}
            {/* Right Side - Fixed Size Images */}
-           <div className="w-full lg:w-1/2 flex justify-center">
+           <div className="w-full lg:w-1/2 flex justify-start">
             <div className="relative w-full max-w-md">
               {/* Mobile Image - Fixed Dimensions */}
               <div className="lg:hidden w-full flex justify-center">
@@ -77,18 +77,18 @@ const UseCases = () => {
                   <img 
                     src={activeImage} 
                     alt={activeSection} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
 
               {/* Desktop Image - Fixed Dimensions */}
               <div className="hidden lg:block w-full">
-                <div className="w-96 h-72 rounded-lg overflow-hidden">
+                <div className="w-150  rounded-lg overflow-hidden">
                   <img 
                     src={activeImage} 
                     alt={activeSection} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>

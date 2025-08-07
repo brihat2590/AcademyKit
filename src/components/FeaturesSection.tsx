@@ -50,7 +50,7 @@ const FeaturesSection: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12 ">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center bg-transparent h-full">
-              <div className="bg-[#d7f281] p-4 rounded-full mb-4">
+              <div className="bg-[#c2e193] p-4 rounded-full mb-4">
                 <img src={feature.icon} alt={feature.title} className="w-8 h-8" />
               </div>
               <h4 className="font-semibold text-[19px] text-[#0f103f] m-3 p-2">
@@ -68,7 +68,7 @@ const FeaturesSection: React.FC = () => {
         </div>
 
         <div className="flex  gap-4">
-          <button className="bg-[#0f103f] text-white px-6 py-2 rounded-md font-semibold hover:opacity-90 border-gray-900 border-3 hover:text-gray-900 hover:border-gray-900 hover:bg-white">
+          <button className="bg-[#0f103f] text-white ml-2 px-6 py-2 rounded-md font-semibold hover:opacity-90 border-gray-900 border-3 hover:text-gray-900 hover:border-gray-900 hover:bg-white">
             Discover Features
           </button>
           <button className="bg-[#c2e092] text-[#0f103f] px-6 py-2 rounded-md font-semibold hover:opacity-90 border-3 border-[#0c0c3d]   hover:border-[#97cb45]">

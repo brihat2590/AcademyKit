@@ -73,7 +73,7 @@ const PricingTable = () => {
               )}
             </div>
 
-            <div className="px-6 py-4 border-r border-gray-200 flex justify-center text-center">
+            <div className="px-6 py-4   flex justify-cenWter text-center">
               {premium === true ? (
                 <div className="w-6 h-6 rounded flex items-center justify-center">
                   <Check className="w-6 h-6 text-gray-900" strokeWidth={2.5} />

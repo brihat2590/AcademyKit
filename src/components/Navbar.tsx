@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div className="relative">
-      <nav className="w-full sticky top-0 bg-white shadow-lg z-50 font-poppins">
+      <nav className="w-full sticky top-0 z-50  bg-white shadow-lg  font-poppins">
         <div className="max-w-7xl mx-auto py-3 flex items-center justify-between cursor-pointer px-4 md:px-0">
           <div className="flex items-center space-x-10">
             <Link href={"/"}><img src="/logo.png" alt="AcademyKit Logo" className="h-9" /></Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
               hover:bg-white hover:text-indigo-950 
               transition-all duration-300 hover:font-semibold mt-2"
           >
-            <span>Contact Us</span>
+            <Link href={"/contact"}>Contact Us</Link>
             <svg
               className="w-5 h-5"
               fill="none"
@@ -266,7 +266,10 @@ export default function Navbar() {
                   border-3 border-transparent hover:border-indigo-950 
                   hover:bg-white hover:text-indigo-950 
                   transition-all duration-300 hover:font-semibold">
-                  <span>Contact Us</span>
+                  <Link href={"/contact"} onClick={()=>{
+                    
+                    setMobileMenuOpen(false)
+                  }}>Contact Us</Link>
                   <svg
                     className="w-5 h-5"
                     fill="none"
