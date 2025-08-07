@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export default function page() {
   return (
@@ -15,12 +15,12 @@ export default function page() {
               Explore AcademyKit's Powerful Features
             </p>
             <div className="flex justify-center  gap-4">
-              <button className="bg-[#c2e092] text-black font-semibold px-6 py-2  border-3 border-[#0a0b34] hover:border-[#6a9b29] transition duration rounded-sm">
+              <a  href="https://hub.docker.com/r/academykit/academy" className="bg-[#c2e092] text-black font-semibold px-6 py-2  border-3 border-[#0a0b34] hover:border-[#6a9b29] transition duration rounded-sm">
                 Try Now!
-              </button>
-              <button className="bg-white text-black font-semibold px-6 py-2  hover:bg-gray-200 transition border-3 border-[#0a0b34] hover:border-[#6a9b29] rounded-sm">
+              </a>
+              <a href="https://docs.academykit.co/introduction" className="bg-white text-black font-semibold px-6 py-2  hover:bg-gray-200 transition border-3 border-[#0a0b34] hover:border-[#6a9b29] rounded-sm">
                 Learn How
-              </button>
+              </a>
             </div>
           </div>
 
