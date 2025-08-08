@@ -2,7 +2,7 @@
 
 import { FeatureCard } from "@/components/ui/FeatureCard";
 
-import { BrainCog, SearchCheck, Globe, Check } from "lucide-react";
+import { BrainCog, SearchCheck, Globe, Check, ArrowRight } from "lucide-react";
 const features2 = [
     {
       icon: <BrainCog size={40} />,
@@ -76,23 +76,23 @@ export default function AIIntegrated() {
  
 
   return (
-    <div className="min-h-screen w-full bg-[#fbfef5] px-6 py-20">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+    <div className="min-h-screen w-full bg-[#fbfef5] px-6 pt-10 pb-20">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 mb-10">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 space-y-6">
-          <p className="text-green-700 font-semibold text-sm pl-2">Analytics</p>
+        <div className="w-full lg:w-1/2 space-y-2">
+          <p className="text-[#6b9a1e] font-semibold text-sm pl-2">Analytics</p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-[#0A0A2C] leading-tight">
           Drive Learning <br /> Success with Data- <br /> Driven Analytics
           </h1>
-          <p className="text-green-700 text-lg">
+          <p className="text-[#6b9a1e] text-lg py-4">
           Achieve personalized eLearning experiences with AcademyKit, tailoring courses to each learner's preferences and needs based on their interests, abilities, and learning styles.
           </p>
           <div className="flex items-center gap-6 pt-4">
             <button className="bg-[#0A0A2C] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] border-3 border-[#0A0A2C] hover:border-[#0A0A2C]  transition duration-300">
               Get started
             </button>
-            <button className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-sm">
-              Learn more <span>→</span>
+            <button className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-md">
+              Learn more <span><ArrowRight/></span>
             </button>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function AIIntegrated() {
           />
         </div>
       </div>
-      <section className="bg-[#FAFFF7] py-16 flex justify-center">
+      <section className="bg-[#FAFFF7] py-16 md:pt-20 flex justify-center ">
       <div className="flex flex-wrap justify-center gap-8 px-4 ">
         {features2.map((feature, index) => (
           <FeatureCard
@@ -116,6 +116,60 @@ export default function AIIntegrated() {
             description={feature.description}
           />
         ))}
+      </div>
+    </section>
+    <section className="bg-[#fafff4] py-16 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* Left Text */}
+        <div>
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#0c0c3d] mb-4">
+            Turn Insights into Impact
+          </h2>
+          <p className="text-[#4a4a68] mb-6 text-xl leading-relaxed p-2">
+            Measure what matters with AcademyKit&apos;s Analytics. You can filter,
+            export, and drill down on the data in a couple clicks.
+          </p>
+
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start space-x-3">
+              <Check className="w-6 h-6 text-[#0c0c3d]   rounded-md p-0.5" />
+              <span className="text-[#0c0c3d] text-base ">
+                Filter, export, and drilldown on the data quickly
+              </span>
+            </li>
+            <li className="flex items-start space-x-3">
+              <Check className="w-6 h-6 text-[#0c0c3d]  rounded-md p-0.5" />
+              <span className="text-[#0c0c3d] text-base ">
+                Multiple Data Sets for Comparison
+              </span>
+            </li>
+            <li className="flex items-start space-x-3">
+              <Check className="w-6 h-6 text-[#0c0c3d]  rounded-md p-0.5" />
+              <span className="text-[#0c0c3d] text-base ">
+                Diverse Analytics Reports (Tailored in the format you want)
+              </span>
+            </li>
+          </ul>
+
+          <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#0c0c3d] text-white font-semibold px-4 py-2 rounded-md shadow hover:text-[#1a1a4c] transition
+          
+          border-3 border-[#0c0c3d] hover:border-[#1a1a4c] hover:bg-white  duration-300">
+            Start Today!
+          </a>
+        </div>
+
+        {/* Right Image */}
+        <div className="flex justify-center">
+          <div className="bg-[#c5ea9b] p-4 rounded-2xl">
+            <img
+              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f4ecfbc797fc942beaea_Analytics-p-1080.png"
+              alt="Analytics Screenshot"
+              width={600}
+              height={400}
+              className="rounded-xl "
+            />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -152,60 +206,7 @@ export default function AIIntegrated() {
           ))}
         </div>
       </section>
-      <section className="bg-[#fafff4] py-16 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left Text */}
-        <div>
-          <h2 className="text-3xl md:text-5xl font-semibold text-[#0c0c3d] mb-4">
-            Turn Insights into Impact
-          </h2>
-          <p className="text-[#4a4a68] mb-6 text-xl leading-relaxed p-2">
-            Measure what matters with AcademyKit&apos;s Analytics. You can filter,
-            export, and drill down on the data in a couple clicks.
-          </p>
-
-          <ul className="space-y-4 mb-8">
-            <li className="flex items-start space-x-3">
-              <Check className="w-6 h-6 text-[#0c0c3d]   rounded-md p-0.5" />
-              <span className="text-[#0c0c3d] text-base ">
-                Filter, export, and drilldown on the data quickly
-              </span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <Check className="w-6 h-6 text-[#0c0c3d]  rounded-md p-0.5" />
-              <span className="text-[#0c0c3d] text-base ">
-                Multiple Data Sets for Comparison
-              </span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <Check className="w-6 h-6 text-[#0c0c3d]  rounded-md p-0.5" />
-              <span className="text-[#0c0c3d] text-base ">
-                Diverse Analytics Reports (Tailored in the format you want)
-              </span>
-            </li>
-          </ul>
-
-          <button className="bg-[#0c0c3d] text-white font-semibold px-4 py-2 rounded-md shadow hover:text-[#1a1a4c] transition
-          
-          border-3 border-[#0c0c3d] hover:border-[#1a1a4c] hover:bg-white  duration-300">
-            Start Today!
-          </button>
-        </div>
-
-        {/* Right Image */}
-        <div className="flex justify-center">
-          <div className="bg-[#c5ea9b] p-4 rounded-2xl">
-            <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f4ecfbc797fc942beaea_Analytics-p-1080.png"
-              alt="Analytics Screenshot"
-              width={600}
-              height={400}
-              className="rounded-xl "
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+      
       
 
       

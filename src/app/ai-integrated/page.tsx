@@ -1,6 +1,8 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { BiRightArrow } from "react-icons/bi";
 
 const features = [
   {
@@ -118,24 +120,24 @@ export default function AIIntegrated() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-[#fbfef5] px-6 py-20">
+    <div className="min-h-screen w-full bg-[#fbfef5] px-6 pt-10 pb-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 space-y-6">
-          <p className="text-green-700 font-semibold text-sm">Powered by AI</p>
+        <div className="w-full lg:w-1/2 space-y-2">
+          <p className="text-[#78a434] font-semibold text-sm">Powered by AI</p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-[#0A0A2C] leading-tight">
             Simplify the <br /> Complex, Amplify <br /> Your Potential
           </h1>
-          <p className="text-green-700 text-lg">
+          <p className="text-[#78a434] text-lg">
             Built for both trainers and learners, with intuitive features and a user-friendly interface.
           </p>
           <div className="flex items-center gap-6 pt-4">
-            <button className="bg-[#0A0A2C] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] hover:border hover:border-[#0A0A2C] transition duration-300">
+            <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#0A0A2C] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] border-3 border-gray-900 transition duration-300 ease-in-out">
               Get started
-            </button>
-            <button className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-sm">
-              Learn more <span>→</span>
-            </button>
+            </a>
+            <a href="https://docs.academykit.co/introduction" target="_blank" rel="noopener noreferrer" className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-md">
+              Learn more <span><ArrowRight/></span>
+            </a>
           </div>
         </div>
 
@@ -149,39 +151,7 @@ export default function AIIntegrated() {
         </div>
       </div>
 
-      {/* Feature Cards */}
-      <section className="w-full bg-[#fbfef5] py-16 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-          {features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 bg-white"
-            >
-              <div className="bg-lime-100 p-4 flex justify-center items-center">
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className="rounded-md w-full object-cover"
-                />
-              </div>
-              <div className="bg-[#0A0A2C] text-white px-6 py-6 flex flex-col justify-between h-full">
-                <div>
-                  <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
-                  <p className="text-sm text-gray-200">{feature.description}</p>
-                </div>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="text-green-400 font-semibold text-sm flex items-center gap-2 hover:underline"
-                  >
-                    Learn more <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* Scroll Sync Section */}
       <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto">
@@ -252,8 +222,42 @@ export default function AIIntegrated() {
               alt="train"
             />
           </section>
+          
         </div>
       </div>
+      {/* Feature Cards */}
+      <section className="w-full bg-[#fbfef5] py-16 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+          {features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 bg-white"
+            >
+              <div className="bg-lime-100 p-4 flex justify-center items-center">
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="rounded-md w-full object-cover"
+                />
+              </div>
+              <div className="bg-[#0A0A2C] text-white px-6 py-6 flex flex-col justify-between h-full">
+                <div>
+                  <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                  <p className="text-sm text-gray-200">{feature.description}</p>
+                </div>
+                <div className="mt-6">
+                  <a
+                    href="#"
+                    className="text-green-400 font-semibold text-sm flex items-center gap-2 hover:underline"
+                  >
+                    Learn more <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
