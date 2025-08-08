@@ -126,7 +126,7 @@ export default function Page() {
           <p className="py-3 mt-3 text-gray-700 text-center">Join startups already growing with AcademyKit.</p>
 
 
-          <div className="flex gap-3 justify-center py-4">
+          <div className="flex gap-3 justify-center py-4 mb-10">
 
 
 

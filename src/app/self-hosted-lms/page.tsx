@@ -120,27 +120,27 @@ export default function SelfHostedLms() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-[#fbfef5] px-6 py-20">
+    <div className="min-h-screen w-full bg-[#fbfef5] px-6 pb-20 pt-10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 space-y-6">
+        <div className="w-full lg:w-1/2 space-y-2">
           <p className="text-green-700 font-semibold text-sm">Self-hosted</p>
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-[#0A0A2C] leading-tight">
             Drive Results <br /> through Effective <br /> Data Control
           </h1>
 
-          <p className="text-green-700 text-lg">
+          <p className="text-[#4c9c6a] text-lg">
             Empowering Control for an Unrivaled Experience. Safeguard sensitive data, ensure compliance, and enjoy a secure learning environment.
           </p>
 
-          <div className="flex items-center gap-6 pt-4">
-            <button className="bg-[#0A0A2C] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] hover:border hover:border-[#0A0A2C] transition duration-300">
+          <div className="flex items-center gap-6 pt-4 mt-5 md:mt-10">
+            <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer"  className="bg-gray-900 text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] border-3 border-gray-900 hover:border-[#0A0A2C] transition duration-300 ease-in-out">
               Get started
-            </button>
-            <button className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-sm">
+            </a>
+            <a href="https://docs.academykit.co/introduction" target="_blank" rel="noopener noreferrer" className="text-gray-900 font-bold flex items-center gap-2 text-md py-2">
               Learn more <span>→</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -159,7 +159,7 @@ export default function SelfHostedLms() {
       {/* Scroll Sync Section */}
       <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto">
         {/* Left Nav */}
-        <nav className="w-1/4 p-6 sticky top-20 h-screen flex flex-col gap-4 border-r mt-12">
+        <nav className="w-1/4 p-6 hidden md:flex sticky top-20 h-screen  flex-col gap-4 border-r mt-12">
           {sections.map((s) => (
             <a
               key={s.id}
@@ -177,59 +177,59 @@ export default function SelfHostedLms() {
         </nav>
 
         {/* Right Scrollable Content */}
-        <div
-          ref={scrollContainerRef}
-          className="w-4/5 overflow-y-auto px-8 py-12 space-y-32"
-        >
-          <section id="private" className="scroll-mt-24 py-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Secure & Private Cloud Hosting</h2>
-            <p className="text-gray-700 mb-6">
-              Elevate your data security and control with our private cloud deployment option. Your data remains yours alone, housed within your organization's private cloud infrastructure.
-            </p>
-            <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27ee55fcb2c6124add3_Deployment%20Process-p-500.png"
-              alt="private"
-              className="rounded-lg w-full"
-            />
-          </section>
+        {/* Right Scrollable Content */}
+<div
+  ref={scrollContainerRef}
+  className="w-full md:w-4/5 overflow-y-auto px-4 md:px-8 py-6 md:py-12 space-y-12 md:space-y-32"
+>
+  <section id="private" className="scroll-mt-24 py-6 md:py-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Secure & Private Cloud Hosting</h2>
+    <p className="text-gray-700 mb-6">
+      Elevate your data security and control with our private cloud deployment option. Your data remains yours alone, housed within your organization's private cloud infrastructure.
+    </p>
+    <img
+      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27ee55fcb2c6124add3_Deployment%20Process-p-500.png"
+      alt="private"
+      className="rounded-lg w-full"
+    />
+  </section>
 
-          <section id="on" className="scroll-mt-24 py-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Your Data, Your Rules</h2>
-            <p className="text-gray-700 mb-6">
-              Take the reins of your data management. With on-premises control, you manage the app within your IT environment.
-            </p>
-            <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d63b905bc1895c69f70a_self-hosted-2-p-500.png"
-              alt="on"
-              className="rounded-lg w-full"
-            />
-          </section>
+  <section id="on" className="scroll-mt-24 py-6 md:py-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Your Data, Your Rules</h2>
+    <p className="text-gray-700 mb-6">
+      Take the reins of your data management. With on-premises control, you manage the app within your IT environment.
+    </p>
+    <img
+      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d63b905bc1895c69f70a_self-hosted-2-p-500.png"
+      alt="on"
+      className="rounded-lg w-full"
+    />
+  </section>
 
-          <section id="enterprise" className="scroll-mt-24 py-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Unwavering Performance</h2>
-            <p className="text-gray-700 mb-6">
-              Enterprise-grade hosting delivers the security, scalability, and performance for demanding workloads.
-            </p>
-            <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27e4ca7183068320720_2-p-500.png"
-              alt="enterprise"
-              className="rounded-lg w-full"
-            />
-          </section>
+  <section id="enterprise" className="scroll-mt-24 py-6 md:py-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Unwavering Performance</h2>
+    <p className="text-gray-700 mb-6">
+      Enterprise-grade hosting delivers the security, scalability, and performance for demanding workloads.
+    </p>
+    <img
+      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27e4ca7183068320720_2-p-500.png"
+      alt="enterprise"
+      className="rounded-lg w-full"
+    />
+  </section>
 
-          <section id="customization" className="scroll-mt-24 py-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Tailor Your Experience</h2>
-            <p className="text-gray-700 mb-6">
-              Customize your app to reflect your brand identity. Modify logos, colors, fonts, and layouts for a consistent visual presence.
-            </p>
-            <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d743e0d2c2a15312eea2_self-hosted-3-p-500.png"
-              alt="customization"
-              className="rounded-lg w-full"
-            />
-          </section>
-          
-        </div>
+  <section id="customization" className="scroll-mt-24 py-6 md:py-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Tailor Your Experience</h2>
+    <p className="text-gray-700 mb-6">
+      Customize your app to reflect your brand identity. Modify logos, colors, fonts, and layouts for a consistent visual presence.
+    </p>
+    <img
+      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d743e0d2c2a15312eea2_self-hosted-3-p-500.png"
+      alt="customization"
+      className="rounded-lg w-full"
+    />
+  </section>
+</div>
       </div>
       {/* Feature Cards */}
       <section className="w-full bg-[#fbfef5] py-16 px-6">
