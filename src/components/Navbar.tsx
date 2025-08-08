@@ -4,32 +4,33 @@ import { ChevronRight, ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBrain, FaPlayCircle, FaSearchengin } from "react-icons/fa";
-import { FaPersonCircleCheck } from "react-icons/fa6";
+import { FaHotTubPerson, FaPersonCircleCheck, FaPersonSnowboarding } from "react-icons/fa6";
 import { FiDollarSign } from "react-icons/fi";
 import { GiProgression } from "react-icons/gi";
-import { MdOnDeviceTraining } from "react-icons/md";
+import { IoIosPerson } from "react-icons/io";
+import { MdModelTraining, MdOnDeviceTraining } from "react-icons/md";
 
 const Solutions=[
   {
-    icon:<FaPersonCircleCheck size={20}/>,
+    icon:<FaPersonCircleCheck size={22}/>,
     title:"Self-Hosted LMS",
     description:"Use beautiful self hosted free LMS.",
     href:"/self-hosted-lms"
   },
   {
-    icon:<MdOnDeviceTraining size={20}/>,
+    icon:<MdOnDeviceTraining size={22}/>,
     title:"Training Management",
     description:"Manage your trainer, trainee and admin.",
     href:"/training-management"
   },
   {
-    icon:<GiProgression size={20}/>,
+    icon:<GiProgression size={22}/>,
     title:"Progress Reporting",
     description:"Reports and analytics for improved decisions",
     href:"/analytics"
   },
   {
-    icon:<FaBrain size={20}/>,
+    icon:<FaBrain size={22}/>,
     title:"AI Integrated",
     description:"Smart tools for enhanced learning experiences",
     href:"/ai-integrated"
@@ -38,25 +39,25 @@ const Solutions=[
 ]
 const Solutions2=[
   {
-    icon:<FaPersonCircleCheck size={20}/>,
+    icon:<MdModelTraining size={22}/>,
     title:"Sales Training",
     description:"Enhance sales team effectiveness",
     href:"/capacity-building"
   },
   {
-    icon:<MdOnDeviceTraining size={20}/>,
+    icon:<FaPersonSnowboarding size={22}/>,
     title:"On-boarding",
     description:"Simplify employee onboarding",
     href:"/on-boarding"
   },
   {
-    icon:<GiProgression size={20}/>,
+    icon:<FaHotTubPerson size={22}/>,
     title:"Employee Training",
     description:"Empower workforce with continuous learning",
     href:"/employee-training"
   },
   {
-    icon:<FaBrain size={20}/>,
+    icon:<IoIosPerson size={22}/>,
     title:"Customer Success",
     description:"Elevate customer engagement",
     href:"/customer-success"
@@ -342,9 +343,7 @@ export default function Navbar() {
             </div>
           </div>
         )}
-      </nav>
-
-      {/* Desktop Dropdown Panel */}
+        {/* Desktop Dropdown Panel */}
       {(hoveredDropdown === "solutions" || hoveredDropdown === "resources") && (
         <div
           className="hidden md:block absolute top-full left-0 w-full z-40 bg-white border-t border-gray-200 shadow-md"
@@ -374,8 +373,8 @@ export default function Navbar() {
       {Icon}
     </div>
     <div>
-      <p className="text-sm font-semibold text-indigo-950">{title}</p>
-      <p className="text-xs font-light text-gray-600 mt-1">{description}</p>
+      <p className="text-md font-semibold text-indigo-950">{title}</p>
+      <p className="text-sm font-light text-gray-600 mt-1">{description}</p>
     </div>
   </Link>
 ))}
@@ -399,8 +398,8 @@ export default function Navbar() {
       {Icon}
     </div>
     <div>
-      <p className="text-sm font-semibold text-indigo-950">{title}</p>
-      <p className="text-xs font-light text-gray-600 mt-1">{description}</p>
+      <p className="text-md font-semibold text-indigo-950">{title}</p>
+      <p className="text-sm font-light text-gray-600 mt-1">{description}</p>
     </div>
   </Link>
 ))}
@@ -485,14 +484,14 @@ export default function Navbar() {
                     <Link href={"/pricing"} className="flex items-start gap-4 hover:bg-white transition rounded-xl p-3 cursor-pointer" onClick={()=>{
                       setHoveredDropdown(null)
                     }}>
-                        <div className=" p-3 rounded-full"><FiDollarSign size={20}/></div>
+                        <div className=" p-2 rounded-full"><FiDollarSign size={20}/></div>
                         <div>
                           <p className="font-semibold">Pricing</p>
                           <p className="text-sm font-extralight leading-relaxed">Start free and upgrade after you are happy.</p>
                         </div>
                       </Link>
                       <a href={'https://docs.academykit.co/app-documentation/introduction'} className="flex items-center gap-4 hover:bg-white transition rounded-xl p-3 cursor-pointer">
-                        <div className=" p-3 rounded-full"><FaSearchengin size={20}/></div>
+                        <div className=" p-2 rounded-full"><FaSearchengin size={20}/></div>
                         <div>
                           <p className="font-semibold">Documentation</p>
                           <p className="text-sm font-extralight leading-relaxed">Get Start here for all help and guides</p>
@@ -584,6 +583,9 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      </nav>
+
+      
     </div>
   );
 }
