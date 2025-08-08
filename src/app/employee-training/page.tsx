@@ -153,12 +153,12 @@ export default function page(){
 
           {/* Buttons */}
           <div className="flex space-x-3 mt-10 py-4 mb-10">
-            <button className="bg-[#0c0c3d] text-white px-5 py-2 rounded-md font-semibold border-3 border-gray-900 hover:bg-white hover:text-gray-900 transition duration-300 ease-in-out">
+            <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#0c0c3d] text-white px-5 py-2 rounded-md font-semibold border-3 border-gray-900 hover:bg-white hover:text-gray-900 transition duration-300 ease-in-out">
               Get started
-            </button>
-            <button className="bg-[#aad751] text-[#0c0c3d] border-3 border-[#0c0c3d] px-5 py-2 rounded-md font-semibold hover:border-green-700">
+            </a>
+            <a href="https://docs.academykit.co/app-documentation/introduction" target="_blank" rel="noopener noreferrer" className="bg-[#aad751] text-[#0c0c3d] border-3 border-[#0c0c3d] px-5 py-2 rounded-md font-semibold hover:border-green-700">
               Learn more
-            </button>
+            </a>
           </div>
         </div>
 
@@ -269,9 +269,9 @@ export default function page(){
           </div>
 
           <div className="mt-6">
-            <button className="w-full bg-[#0c0c3d] text-white border-3 border-gray-900 hover:bg-white hover:text-gray-900 py-2 rounded-md font-semibold  transition ease-in-out duration-300">
+            <a href="https://docs.academykit.co/app-documentation/introduction" className="w-full bg-[#0c0c3d] text-white border-3 border-gray-900 hover:bg-white hover:text-gray-900 py-2 rounded-md font-semibold  transition ease-in-out duration-300 flex justify-center">
               Try Now
-            </button>
+            </a >
             <p className="text-sm text-[#0c0c3d] mt-2 text-center">
               No credit card required. Deploy on your own
             </p>
@@ -297,9 +297,9 @@ export default function page(){
           </div>
 
           <div className="mt-8">
-            <button className="w-full bg-white text-[#0c0c3d] py-2 rounded-md font-semibold hover:bg-gray-200 transition border-2 hover:border-green-600 border-gray-900">
+            <Link href={"/contact"} className="w-full bg-white text-[#0c0c3d] py-2 rounded-md font-semibold hover:bg-gray-200 transition border-2 flex justify-center hover:border-green-600 border-gray-900">
               Contact Us
-            </button>
+            </Link>
             <p className="text-sm mt-4 text-center text-white">
               Get personalized demo and custom plan
             </p>

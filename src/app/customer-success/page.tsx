@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export default function page(){
     const certifications = [
@@ -74,16 +75,16 @@ export default function page(){
 
 <div className="flex flex-col md:flex-row w-full justify-center  bg-gray-900 text-white rounded-xl shadow-lg overflow-hidden px-12 py-10 mb-5 ">
         <div className="p-8 md:p-12  w-full md:w-1/2">
-          <p className="text-green-300 text-sm mb-6">Get Started Today</p>
+          <p className="text-[#c3e192] text-sm mb-6">Get Started Today</p>
           <h1 className="text-4xl md:text-7xl font-semibold mb-4">
             Turn Customer Confusion Into Product Confidence
           </h1>
-          <p className="text-green-300 text-sm mb-6">
+          <p className="text-[#c3e192] text-sm mb-6">
             Gamified training, personalized learning paths, and powerful certifications - all in one platform.
           </p>
-          <button className="bg-white text-indigo-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 border-3 border-indigo-900 hover:border-green-600">
+          <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-white text-indigo-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 border-3 border-indigo-900 hover:border-green-600">
             Try Now!
-          </button>
+          </a>
         </div>
         <div className="w-full md:w-1/2 bg-gray-900 p-4 flex justify-center items-center">
           <img
@@ -277,9 +278,9 @@ export default function page(){
           </div>
 
           <div className="mt-6">
-            <button className="w-full bg-[#0c0c3d] text-white border-3 border-gray-900 hover:bg-white hover:text-gray-900 py-2 rounded-md font-semibold  transition ease-in-out duration-300">
+            <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="w-full bg-[#0c0c3d] text-white border-3 border-gray-900 hover:bg-white hover:text-gray-900 py-2 rounded-md font-semibold  transition ease-in-out duration-300 flex justify-center">
               Try Now
-            </button>
+            </a>
             <p className="text-sm text-[#0c0c3d] mt-2 text-center">
               No credit card required. Deploy on your own
             </p>
@@ -305,9 +306,9 @@ export default function page(){
           </div>
 
           <div className="mt-8">
-            <button className="w-full bg-white text-[#0c0c3d] py-2 rounded-md font-semibold hover:bg-gray-200 transition border-2 hover:border-green-600 border-gray-900">
+            <Link href={"/contact"} className="w-full bg-white text-[#0c0c3d] py-2 rounded-md font-semibold hover:bg-gray-200 transition border-2 flex justify-center hover:border-green-600 border-gray-900 ">
               Contact Us
-            </button>
+            </Link>
             <p className="text-sm mt-4 text-center text-white">
               Get personalized demo and custom plan
             </p>

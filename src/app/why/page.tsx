@@ -1,3 +1,9 @@
+import { User } from "lucide-react";
+import Link from "next/link";
+import { FaBrain } from "react-icons/fa";
+import { GiProgression } from "react-icons/gi";
+import { MdSelfImprovement } from "react-icons/md";
+import { WiTrain } from "react-icons/wi";
 
 
 export default function page() {
@@ -15,10 +21,10 @@ export default function page() {
               Explore AcademyKit's Powerful Features
             </p>
             <div className="flex justify-center  gap-4">
-              <a  href="https://hub.docker.com/r/academykit/academy" className="bg-[#c2e092] text-black font-semibold px-6 py-2  border-3 border-[#0a0b34] hover:border-[#6a9b29] transition duration rounded-sm">
+              <a  href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#c2e092] text-black font-semibold px-6 py-2  border-3 border-[#0a0b34] hover:border-[#6a9b29] transition duration rounded-sm">
                 Try Now!
               </a>
-              <a href="https://docs.academykit.co/introduction" className="bg-white text-black font-semibold px-6 py-2  hover:bg-gray-200 transition border-3 border-[#0a0b34] hover:border-[#6a9b29] rounded-sm">
+              <a href="https://docs.academykit.co/introduction" target="_blank" rel="noopener noreferrer" className="bg-white text-black font-semibold px-6 py-2  hover:bg-gray-200 transition border-3 border-[#0a0b34] hover:border-[#6a9b29] rounded-sm">
                 Learn How
               </a>
             </div>
@@ -47,95 +53,74 @@ export default function page() {
   <div className="flex flex-wrap justify-center gap-8"> {/* Changed to stretch for equal height */}
     {/* Card 1 */}
     <div className="bg-[#0b0c2a] text-white rounded-2xl px-7 py-9 w-full max-w-xl flex flex-col items-center"> {/* Increased padding slightly */}
-      <div className="mb-5">
-        <img
-          src="https://via.placeholder.com/60"
-          alt="Self Hosted Icon"
-          width={58}  
-          height={58}
-          className="rounded-full"
-        />
+      <div className="mb-5 bg-[#c3e192] text-gray-900 p-4 rounded-full">
+        <MdSelfImprovement size={25}/>
+        
       </div>
       <h3 className="text-[30px] font-bold mb-3.5">Self Hosted</h3>  {/* Between xl and 2xl */}
       <p className="text-center text-[16px] mb-5 leading-snug">  {/* Slightly larger than base */}
         Experience Unmatched Empowerment to Safeguard Sensitive Data,
         Ensure Compliance, and Enjoy Secure Learning Environments.
       </p>
-      <a
-        href="#"
+      <Link
+        href="/self-hosted-lms"
     className="text-[#aad390] font-semibold inline-flex items-center gap-1 hover:text-[#5e862a] transition text-[15px]"
       >
         Learn more <span>&rarr;</span>
-      </a>
+      </Link>
     </div>
 
     {/* Card 2 */}
     <div className="bg-[#0b0c2a] text-white rounded-2xl px-7 py-9 w-full max-w-xl flex flex-col items-center">
-      <div className="mb-5">
-        <img
-          src="https://via.placeholder.com/60"
-          alt="AI Integrated Icon"
-          width={58}
-          height={58}
-          className="rounded-full"
-        />
+    <div className="mb-5 bg-[#c3e192] text-gray-900 p-4 rounded-full">
+        <FaBrain size={25}/>
+        
       </div>
       <h3 className="text-[30px] font-bold mb-3.5">AI Integrated</h3>
       <p className="text-center text-[16px] mb-5 leading-snug">
         Designed to cater to both instructors and students, equipped with
         user-friendly functionalities and an intuitive interface.
       </p>
-      <a
-        href="#"
+      <Link
+        href="/ai-integrated"
         className="text-[#aad390] font-semibold inline-flex items-center gap-1 hover:text-[#5e862a] transition text-[15px]"
       >
         Learn more <span>&rarr;</span>
-      </a>
+      </Link>
     </div>
     <div className="flex flex-wrap justify-center gap-8">
     <div className="bg-[#0b0c2a] text-white rounded-2xl px-7 py-9 w-full max-w-xl flex flex-col items-center">
-      <div className="mb-5">
-        <img
-          src="https://via.placeholder.com/60"
-          alt="AI Integrated Icon"
-          width={58}
-          height={58}
-          className="rounded-full"
-        />
+    <div className="mb-5 bg-[#c3e192] text-gray-900 p-4 rounded-full">
+        <WiTrain size={25}/>
+        
       </div>
-      <h3 className="text-[30px] font-bold mb-3.5">AI Integrated</h3>
+      <h3 className="text-[30px] font-bold mb-3.5">Training Management
+      </h3>
       <p className="text-center text-[16px] mb-5 leading-snug">
-        Designed to cater to both instructors and students, equipped with
-        user-friendly functionalities and an intuitive interface.
+      Conduct your training symphony. Plan, deliver, track, report - all for efficient skill development & data-driven success.
       </p>
-      <a
-        href="#"
+      <Link
+        href="/training-management"
         className="text-[#aad390] font-semibold inline-flex items-center gap-1 hover:text-[#5e862a] transition text-[15px]"
       >
         Learn more <span>&rarr;</span>
-      </a>
+      </Link>
     </div>
     <div className="bg-[#0b0c2a] text-white rounded-2xl px-7 py-9 w-full max-w-xl flex flex-col items-center">
-      <div className="mb-5">
-        <img
-          src="https://via.placeholder.com/60"
-          alt="AI Integrated Icon"
-          width={58}
-          height={58}
-          className="rounded-full"
-        />
+    <div className="mb-5 bg-[#c3e192] text-gray-900 p-4 rounded-full">
+        <GiProgression size={25}/>
+        
       </div>
-      <h3 className="text-[30px] font-bold mb-3.5">AI Integrated</h3>
+      <h3 className="text-[30px] font-bold mb-3.5">Progress Tracking and Reporting</h3>
       <p className="text-center text-[16px] mb-5 leading-snug">
-        Designed to cater to both instructors and students, equipped with
-        user-friendly functionalities and an intuitive interface.
+      Maximize Learning with Data-Driven Insights. Tailor Courses for Personalized eLearning Experiences with AcademyKit.
       </p>
-      <a
-        href="#"
+      <Link
+        href="/analytics"
         className="text-[#aad390] font-semibold inline-flex items-center gap-1 hover:text-[#5e862a] transition text-[15px]"
       >
         Learn more <span>&rarr;</span>
-      </a>
+      </Link>
     </div>
     
 
@@ -162,12 +147,12 @@ export default function page() {
 
         {/* Right Buttons */}
         <div className="flex gap-4">
-          <button className="bg-[#0b0c2a] text-white font-semibold px-6 py-2 rounded hover:text-[#1a1b4a] hover:bg-white transition border-3 border-[#0b0c2a]">
+          <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#0b0c2a] text-white font-semibold px-6 py-2 rounded hover:text-[#1a1b4a] hover:bg-white transition border-3 border-[#0b0c2a]">
             Get Started
-          </button>
-          <button className="bg-white text-[#0b0c2a] border-2 border-[#0b0c2a] font-semibold px-6 py-2 rounded hover:bg-gray-100 transition brder-3 hover:border-[#6a9b29]">
+          </a>
+          <a href="https://docs.academykit.co/introduction" target="_blank" rel="noopener noreferrer"  className="bg-white text-[#0b0c2a]  border-[#0b0c2a] font-semibold px-6 py-2 rounded hover:bg-gray-100 transition border-3 hover:border-[#6a9b29]">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </section>

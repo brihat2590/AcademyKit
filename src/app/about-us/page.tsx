@@ -27,9 +27,9 @@ export default function AboutUs(){
                     </span>
                     </span>
                 </h2>
-                <button className="mt-10 px-6 py-1.5 bg-[#c3e192] text-[#0a0a32] font-semibold rounded-md shadow border-3 border-gray-900 hover:border-green-700 transition">
+                <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer"  className="mt-10 px-6 py-1.5 bg-[#c3e192] text-[#0a0a32] font-semibold rounded-md shadow border-3 border-gray-900 hover:border-green-700 transition">
                     Get Started
-                </button>
+                </a>
                 </section>
 
 
@@ -46,9 +46,9 @@ export default function AboutUs(){
                         </p>
                         <div className="flex justify-center gap-4">
                           
-                          <button className="px-5 py-2 rounded-md bg-[#c2e092] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29] border-[#0c0c3d]">
+                          <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-md bg-[#c2e092] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29] border-[#0c0c3d]">
                             Try Now!
-                          </button>
+                          </a>
                         </div>
                 
                         {/* Floating shapes – large + popped out further */}

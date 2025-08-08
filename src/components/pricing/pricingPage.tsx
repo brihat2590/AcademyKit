@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import PricingTable from './pricingTable';
 import { GiZipper } from 'react-icons/gi';
+import { PiDeviceMobileSlashFill } from 'react-icons/pi';
+import Link from 'next/link';
 
 export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#fbfef5] py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#fbfef5] py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16  ">
@@ -136,7 +138,8 @@ export default function PricingSection() {
             <div className='flex flex-col gap-3'>
 
               <div>
-                <GiZipper/>
+                {/* <GiZipper/> */}
+                <PiDeviceMobileSlashFill/>
 
 
               </div>
@@ -178,13 +181,13 @@ export default function PricingSection() {
 
         </div>
 
-        <div className="flex justify-center sm:justify-end  max-w-lg gap-8  mt-8 md:ml-10 ">
-            <button className="bg-gray-900 text-white  px-6 rounded-sm font-medium hover:bg-white hover:text-gray-900 hover:border-gray-900 border-3  transition duration-500 py-2">
+        <div className="flex justify-center sm:justify-end  max-w-lg gap-8  mt-8 md:ml-11 mb-10 ">
+            <Link href="/request-demo" className="bg-gray-900 text-white  px-6 rounded-sm font-medium hover:bg-white hover:text-gray-900 hover:border-gray-900 border-3 border-gray-900  transition duration-500 py-2">
               Book an Appointment
-            </button>
-            <button className="text-[#0a0b34] bg-[#c2e092] border-3 border-[#0a0b34]  transition duration-500 rounded-sm  px-6 hover:border-[#c2e092] ">
+            </Link>
+            <a href='https://hub.docker.com/r/academykit/academy'  target="_blank" rel="noopener noreferrer" className="text-[#0a0b34] bg-[#c2e092] border-3 border-[#0a0b34]  transition duration-500 rounded-sm  px-6 hover:border-[#c2e092] flex items-center font-semibold ">
               Try Now!
-            </button>
+            </a>
           </div>
 
         
