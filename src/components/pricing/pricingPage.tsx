@@ -83,9 +83,9 @@ export default function PricingSection() {
             </p>
             
             
-            <button className="w-full bg-gray-900 text-white py-3 px-6 rounded-sm  font-medium  transition duration-500 hover:text-[#0a0b34] hover:border-2 hover:border-[#0a0b34] hover:bg-[#f9fcf4]">
+            <a href='https://academykit.lemonsqueezy.com/buy/c7fb9fa3-ecd3-4d1f-a773-31cca48cf604'  target="_blank" rel='noopener noreferral'  className="w-full bg-gray-900 text-white py-3 px-6 rounded-sm  font-medium  transition duration-500 ease-in-out border-3 border-gray-900 hover:text-gray-900 hover:bg-[#f9fcf4] flex justify-center ">
               Get Started
-            </button>
+            </a>
           </div>
 
 
@@ -108,9 +108,9 @@ export default function PricingSection() {
               Recommended for mid-size businesses & large enterprises
             </p>
             
-            <button className="w-full bg-gray-900 text-white py-3 px-6 rounded-sm  font-medium   hover:text-[#0a0b34] hover:border-2 hover:border-[#0a0b34] hover:bg-[#f9fcf4] transition duration-500">
-              Get Started
-            </button>
+            <Link href='/request-demo' target="_blank" rel="noopener noreferral" className="w-full bg-gray-900 text-white py-3 px-6 rounded-sm  font-medium    border-3 border-gray-900 hover:text-gray-900 flex justify-center hover:bg-[#f9fcf4] transition duration-500 ease-in-out">
+              Upgrade
+            </Link>
             
           </div>
         </div>

@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-sm text-gray-700 mt-4 md:mt-0">© 2024 SursaTech</p>
+        <p className="text-sm text-gray-700 mt-4 md:mt-0">© 2025 SursaTech</p>
       </div>
     </footer>
   );
