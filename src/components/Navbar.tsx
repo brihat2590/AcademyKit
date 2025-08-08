@@ -437,9 +437,11 @@ export default function Navbar() {
                       </div>
                     </div>
                   </Link>
-                <div className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline">
+                <Link href={"/why"} className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline" onClick={()=>{
+                  setHoveredDropdown(null)
+                }}>
                   See all <ChevronRight className="w-4 h-4" />
-                </div>
+                </Link>
               </div>
               
               </div>
@@ -550,9 +552,12 @@ export default function Navbar() {
                       </div>
                     </div>
                   </Link>
-                <div className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline">
+                <Link href={"/why"} onClick={()=>{
+                  setHoveredDropdown(null)
+                }}
+             className="py-6 flex items-center gap-1 text-[#0f103f] font-light cursor-pointer hover:underline">
                   See all <ChevronRight className="w-4 h-4" />
-                </div>
+                </Link>
               </div>
             </div>
           )}
@@ -562,10 +567,12 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto text-white px-6 py-6 flex items-center justify-between text-sm md:text-base">
               <div className="font-medium">
                 Ready to get started?{" "}
-                <span className="font-bold underline cursor-pointer">Request for Demo</span>
+                <Link href={"/request-demo"} onClick={()=>{
+                  setHoveredDropdown(null)
+                }} className="font-bold underline cursor-pointer">Request for Demo</Link>
               </div>
               <div className="flex items-center space-x-8 font-semibold">
-                <span className="cursor-pointer hover:underline">Learn More</span>
+                <a href="https://docs.academykit.co/app-documentation/introduction" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:underline">Learn More</a>
                 <span className="flex items-center gap-2 cursor-pointer hover:underline">
                   <svg
                     className="w-5 h-5"
@@ -576,7 +583,9 @@ export default function Navbar() {
                   >
                     <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
                   </svg>
-                  Chat to sales
+                  <Link href={"/contact"} onClick={()=>{
+                    setHoveredDropdown(null)
+                  }} className="cursor-pointer transition-colors duration-300">Chat to sales</Link>
                 </span>
               </div>
             </div>
