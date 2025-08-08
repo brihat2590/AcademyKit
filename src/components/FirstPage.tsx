@@ -1,6 +1,7 @@
 "use client";
 
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export default function Firstpage() {
   return (
@@ -27,13 +28,13 @@ export default function Firstpage() {
           </p>
 
           <div className="flex flex-wrap gap-4 ">
-            <button className="bg-[#0c0c3d] text-white px-6 py-2.5 rounded-md font-semibold shadow transition border-3 mt-4 border-gray-900 hover:bg-[#fefefe] hover:text-[#30325c]">
+            <a href={"https://hub.docker.com/r/academykit/academy"} target="_blank" rel="noopener noreferral" className="bg-[#0c0c3d] text-white px-6 py-2.5 rounded-md font-semibold shadow transition border-3 mt-4 border-gray-900 hover:bg-[#fefefe] hover:text-[#30325c]">
               Download Now
-            </button>
-            <button className="bg-[#c2e092] text-[#0c0c3d] px-6 py-2.5 rounded-md font-semibold shadow transition border-[#0c0c3d] border-3 mt-4 hover:border-[#97cb45]">
+            </a>
+            <a href={'https://docs.academykit.co/introduction'} target="_blank" rel="noopener noreferral" className="bg-[#c2e092] text-[#0c0c3d] px-6 py-2.5 rounded-md font-semibold shadow transition border-[#0c0c3d] border-3 mt-4 hover:border-[#97cb45]">
               Learn more <span className="">→</span>
 
-            </button>
+            </a>
           </div>
         </div>
 

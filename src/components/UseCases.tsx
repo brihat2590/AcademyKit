@@ -1,31 +1,43 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 const UseCases = () => {
   const [activeSection, setActiveSection] = useState("Employee Training");
+
   const sections = [
     {
       title: "Customer Success",
-      description: "Enable customers to get most of your product. Reduce churn and increase loyalty.",
-      image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629dab4bdc74e5f13ffce0d_training-management-1.png" 
+      description:
+        "Enable customers to get most of your product. Reduce churn and increase loyalty.",
+      image:
+        "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629dab4bdc74e5f13ffce0d_training-management-1.png",
+      href: "/customer-success",
     },
     {
-      title: "Employee Training", 
-      description: "Onboard new hires, upskill existing employees, and ensure compliance with mandatory training.",
-      image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f6353e4626fcb405cc44_capacity%20building-p-800.png" 
+      title: "Employee Training",
+      description:
+        "Onboard new hires, upskill existing employees, and ensure compliance with mandatory training.",
+      image:
+        "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f6353e4626fcb405cc44_capacity%20building-p-800.png",
+      href: "/employee-training",
     },
     {
       title: "Capacity Building",
-      description: "Train partners resellers, or franchises to improve product knowledge and sales skills",
-      image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d26437d7c761e392542d_customer%20success-p-800.png" // Replace with your image path
-    }
+      description:
+        "Train partners resellers, or franchises to improve product knowledge and sales skills",
+      image:
+        "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d26437d7c761e392542d_customer%20success-p-800.png",
+      href: "/capacity-building",
+    },
   ];
 
-  
-  const activeImage = sections.find(section => section.title === activeSection)?.image;
+  const activeData = sections.find(
+    (section) => section.title === activeSection
+  );
 
   return (
-    <div className="w-full bg-[#fbfef5] py-10 ">
+    <div className="w-full bg-[#fbfef5] py-10">
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
@@ -49,11 +61,9 @@ const UseCases = () => {
                 {activeSection === section.title && (
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-black"></div>
                 )}
-                
-                <div 
-                  className={`pl-6 pb-8 cursor-pointer ${
-                    activeSection === section.title ? 'opacity-100' : 'opacity-100'
-                  }`}
+
+                <div
+                  className="pl-6 pb-8 cursor-pointer"
                   onClick={() => setActiveSection(section.title)}
                 >
                   <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
@@ -67,35 +77,29 @@ const UseCases = () => {
             ))}
           </div>
 
-          {/* Right Side - Responsive Image */}
-           {/* Right Side - Fixed Size Images */}
-           <div className="w-full lg:w-1/2 flex justify-start">
+          {/* Right Side - Image with Button */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center">
             <div className="relative w-full max-w-md">
-              {/* Mobile Image - Fixed Dimensions */}
-              <div className="lg:hidden w-full flex justify-center">
-                <div className="w-96 h-96 rounded-lg overflow-hidden">
-                  <img 
-                    src={activeImage} 
-                    alt={activeSection} 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              {/* Image */}
+              <div className="w-full rounded-lg overflow-hidden mb-4">
+                <img
+                  src={activeData?.image}
+                  alt={activeSection}
+                  className="w-full h-full object-contain"
+                />
               </div>
 
-              {/* Desktop Image - Fixed Dimensions */}
-              <div className="hidden lg:block w-full">
-                <div className="w-150  rounded-lg overflow-hidden">
-                  <img 
-                    src={activeImage} 
-                    alt={activeSection} 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
+              {/* Learn More Button */}
+              {activeData && (
+                <Link
+                  href={activeData.href}
+                  className="flex justify-center items-center max-w-[140px] mx-auto  py-3  text-sm font-medium text-white bg-black rounded-md  transition mt-8 border-3 border-gray-900 hover:bg-white hover:text-gray-900 "
+                >
+                  Learn More
+                </Link>
+              )}
             </div>
-        </div>
-          
-          
+          </div>
         </div>
       </div>
     </div>
