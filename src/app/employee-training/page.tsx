@@ -1,5 +1,7 @@
 import { FeatureCard } from "@/components/ui/FeatureCard"
-import { BrainCog, Globe, SearchCheck } from "lucide-react"
+import { BrainCog, DiamondMinus, Globe, GraduationCap, SearchCheck } from "lucide-react"
+import Link from "next/link";
+import { MdOutlineModelTraining } from "react-icons/md";
 
 export default function page(){
 
@@ -89,39 +91,138 @@ export default function page(){
           <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
 
           {/* Button */}
-          <button className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2">
+          <Link href={"/request-demo"} className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2">
             GET A DEMO
-          </button>
+          </Link>
         </div>
       </div>
     </section>
-    <section className="bg-[#fbfef5]  flex flex-col  md:px-16 md:py-24 px-8 py-10 ">
-        <div className="max-w-7xl mx-auto flex flex-col">
+    <section className="bg-[#fbfef5] flex flex-col px-6 sm:px-8 md:px-16 py-10 md:py-24">
+  <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight">
+      Stay ahead of the curve
+      <br />
+      in business.
+    </h2>
 
+    <p className="px-2 font-light text-base sm:text-lg md:text-[19px] mt-4 max-w-2xl mb-6">
+      In today's dynamic business environment, thriving demands a growth mindset.
+      Empower your team with continuous upskilling and reskilling – the cornerstone
+      of sustainable growth and industry leadership.
+    </p>
 
-            <h2 className=" text-center text-2xl sm:text-3xl  md:text-5xl font-semibold">Stay ahead of the curve<br></br>in business.</h2>
+    <img
+      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6628a431cfef95a289ff175b_mock-2-p-800.webp"
+      alt="onboarding"
+      className="rounded-lg border-4 border-gray-900 w-full max-w-xl mt-8 mb-5"
+    />
+  </div>
+</section>
 
-
-            <p className=" p-2 text-center font-light text-[19px] mt-2 sm:mt-4 max-w-[720px] mb-4">
-            In today's dynamic business environment, thriving demands a growth mindset. Empower your team with continuous upskilling and reskilling – the cornerstone of sustainable growth and industry leadership..
-
-            </p>
-            <img src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6628a431cfef95a289ff175b_mock-2-p-800.webp"
-            alt="onboarding"
-            className="rounded-lg max-w-xl mx-auto mt-8 sm:mt-15 mb-5"
-            />
-
-
+    <section className="bg-[#f9fcf1] py-12 px-6 mb-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+        {/* Card 1 */}
+        <div className="flex flex-col items-center md:items-start">
+          {/* Icon Placeholder */}
+          <div className="w-12 h-12 rounded-full  flex items-center justify-center mb-4">
+            <DiamondMinus size={30}></DiamondMinus>
+            
+          </div>
+          <h3 className="text-[#0c0c3d] text-lg font-bold mb-2">
+            Reduce training expenses
+          </h3>
+          <p className="text-[#0c0c3d] text-sm">
+            Eliminate costs associated with travel, venue rentals, and instructors by transitioning to an online employee training program
+          </p>
         </div>
-        <div className="max-w-7xl mx-auto">
-            <img src='https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6650113dd8f61520ebd53c59_Mockup-%20on%20boarding-p-2000.png'
-            alt="onboarding"/>
 
+        {/* Card 2 */}
+        <div className="flex flex-col items-center md:items-start">
+          {/* Icon Placeholder */}
+          <div className="w-12 h-12 rounded-full  flex items-center justify-center mb-4">
+
+            <MdOutlineModelTraining size={30}></MdOutlineModelTraining>
+            
+          </div>
+          <h3 className="text-[#0c0c3d] text-lg font-bold mb-2">
+            Flexible training options
+          </h3>
+          <p className="text-[#0c0c3d] text-sm mb-4">
+            Empower your teams with self-paced online training that can be accessed anytime, anywhere, saving valuable focus time.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex space-x-3 mt-10 py-4 mb-10">
+            <button className="bg-[#0c0c3d] text-white px-5 py-2 rounded-md font-semibold border-3 border-gray-900 hover:bg-white hover:text-gray-900 transition duration-300 ease-in-out">
+              Get started
+            </button>
+            <button className="bg-[#aad751] text-[#0c0c3d] border-3 border-[#0c0c3d] px-5 py-2 rounded-md font-semibold hover:border-green-700">
+              Learn more
+            </button>
+          </div>
         </div>
 
+        {/* Card 3 */}
+        <div className="flex flex-col items-center md:items-start">
+          {/* Icon Placeholder */}
+          <div className="w-12 h-12 rounded-full  flex items-center justify-center mb-4">
+
+            <GraduationCap size={30}/>
+            
+          </div>
+          <h3 className="text-[#0c0c3d] text-lg font-bold mb-2">
+            Continuous learning
+          </h3>
+          <p className="text-[#0c0c3d] text-sm">
+            Motivate employees to embrace new challenges and acquire additional skills to remain pertinent in the ever-changing workplace.
+          </p>
+        </div>
+      </div>
+      
+    </section> 
+    <section className="max-w-7xl mx-auto bg-[#fbfef5] py-12 px-6 ">
+
+
+
+        <h2 className="text-3xl  md:text-4xl font-semibold">Optimize your team performance for greater impact.</h2>
+
+        <p className="py-8 mb-5 font-light text-md  ">AcademyKit prioritizes performance and offers in-depth analytics. Our Training Information Management System (TIMS) harnesses AI-driven learning techniques to enhance your sales performance and business results.
+
+</p>
+
+<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        {features.map((feature) => (
+          <div
+            key={feature.number}
+            className="bg-[#c2e092]  p-6 rounded-xl shadow-sm text-center flex flex-col items-center"
+          >
+            <div className="w-16 h-16 rounded-full bg-[#9cce50] flex items-center justify-center text-[#0c0c3d] font-bold text-lg mb-4">
+              {feature.number}
+            </div>
+            <h3 className="text-[#0c0c3d] font-bold text-lg mb-2">
+              {feature.title}
+            </h3>
+            <p className="text-[#0c0c3d] text-sm">{feature.description}</p>
+          </div>
+        ))}
+      </div>
 
     </section>
-    <section className="bg-[#f9fcf1] py-12 px-6">
+
+
+    <section className="max-w-7xl mx-auto py-10 my-10  bg-[#fbfef5]">
+
+        <div>
+
+            <img src='https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a07cef64ed9bae11c0138_on-boarding-1-p-2000.png'
+            alt="hero"
+            className="w-full"
+            
+            />
+        </div>
+
+    </section> 
+    <section className="bg-[#f9fcf1] py-20 px-6 mt-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
         {/* Left Section (Image and Pricing) */}
         <div className="text-center md:text-left flex flex-col justify-center items-start ">
@@ -208,102 +309,10 @@ export default function page(){
     </section>
 
 
-    <section className="max-w-7xl mx-auto  bg-[#fbfef5]">
+    
+    
 
-        <div>
-
-            <img src='https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a07cef64ed9bae11c0138_on-boarding-1-p-2000.png'
-            alt="hero"
-            className="w-full"
-            
-            />
-        </div>
-
-    </section> 
-    <section className="bg-[#f9fcf1] py-12 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
-        {/* Card 1 */}
-        <div className="flex flex-col items-center md:items-start">
-          {/* Icon Placeholder */}
-          <div className="w-12 h-12 rounded-full bg-[#f5f1ff] flex items-center justify-center mb-4">
-            <span className="text-xl">🎯</span> {/* Replace with actual icon */}
-          </div>
-          <h3 className="text-[#0c0c3d] text-lg font-bold mb-2">
-            Reduce training expenses
-          </h3>
-          <p className="text-[#0c0c3d] text-sm">
-            Eliminate costs associated with travel, venue rentals, and instructors by transitioning to an online employee training program
-          </p>
-        </div>
-
-        {/* Card 2 */}
-        <div className="flex flex-col items-center md:items-start">
-          {/* Icon Placeholder */}
-          <div className="w-12 h-12 rounded-full bg-[#f5f1ff] flex items-center justify-center mb-4">
-            <span className="text-xl">🔀</span> {/* Replace with actual icon */}
-          </div>
-          <h3 className="text-[#0c0c3d] text-lg font-bold mb-2">
-            Flexible training options
-          </h3>
-          <p className="text-[#0c0c3d] text-sm mb-4">
-            Empower your teams with self-paced online training that can be accessed anytime, anywhere, saving valuable focus time.
-          </p>
-
-          {/* Buttons */}
-          <div className="flex space-x-3">
-            <button className="bg-[#0c0c3d] text-white px-5 py-2 rounded-md font-semibold border-3 border-gray-900 hover:bg-white hover:text-gray-900 transition duration-300 ease-in-out">
-              Get started
-            </button>
-            <button className="bg-[#aad751] text-[#0c0c3d] border-3 border-[#0c0c3d] px-5 py-2 rounded-md font-semibold hover:border-green-700">
-              Learn more
-            </button>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className="flex flex-col items-center md:items-start">
-          {/* Icon Placeholder */}
-          <div className="w-12 h-12 rounded-full bg-[#f5f1ff] flex items-center justify-center mb-4">
-            <span className="text-xl">📘</span> {/* Replace with actual icon */}
-          </div>
-          <h3 className="text-[#0c0c3d] text-lg font-bold mb-2">
-            Continuous learning
-          </h3>
-          <p className="text-[#0c0c3d] text-sm">
-            Motivate employees to embrace new challenges and acquire additional skills to remain pertinent in the ever-changing workplace.
-          </p>
-        </div>
-      </div>
-    </section> 
-
-    <section className="max-w-7xl mx-auto bg-[#fbfef5] py-12 ">
-
-
-
-        <h2 className="text-3xl  md:text-4xl font-semibold">Optimize your team performance for greater impact.</h2>
-
-        <p className="py-6 font-light text-md ">AcademyKit prioritizes performance and offers in-depth analytics. Our Training Information Management System (TIMS) harnesses AI-driven learning techniques to enhance your sales performance and business results.
-
-</p>
-
-<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-        {features.map((feature) => (
-          <div
-            key={feature.number}
-            className="bg-[#c2e092]  p-6 rounded-xl shadow-sm text-center flex flex-col items-center"
-          >
-            <div className="w-16 h-16 rounded-full bg-[#9cce50] flex items-center justify-center text-[#0c0c3d] font-bold text-lg mb-4">
-              {feature.number}
-            </div>
-            <h3 className="text-[#0c0c3d] font-bold text-lg mb-2">
-              {feature.title}
-            </h3>
-            <p className="text-[#0c0c3d] text-sm">{feature.description}</p>
-          </div>
-        ))}
-      </div>
-
-    </section>
+    
    
     
     
