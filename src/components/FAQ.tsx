@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function FAQ() {
@@ -12,9 +13,9 @@ export default function FAQ() {
         <p className="text-lg text-indigo-950 mb-10">
           Everything you need to know about AcademyKit. Can’t find the answer
           you’re looking for? Please{" "}
-          <a href="#" className="text-[#85c226] underline hover:opacity-80">
+          <Link href=" /contact" className="text-[#85c226] underline hover:opacity-80">
             let us know.
-          </a>
+          </Link>
         </p>
 
         <div className="grid md:grid-cols-3 gap-10 text-sm md:text-base">

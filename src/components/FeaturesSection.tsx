@@ -5,6 +5,7 @@ import { FaServer } from "react-icons/fa";
 import { SiSololearn } from "react-icons/si";
 import { GiProgression } from "react-icons/gi";
 import { LuComputer } from "react-icons/lu";
+import Link from "next/link";
 
 const features = [
   {
@@ -72,12 +73,12 @@ const FeaturesSection: React.FC = () => {
         </div>
 
         <div className="flex  gap-4">
-          <button className="bg-[#0f103f] text-white ml-2 px-4 py-2 rounded-md font-semibold hover:opacity-90 border-gray-900 border-3 hover:text-gray-900 hover:border-gray-900 hover:bg-white">
+          <Link href="/why" className="bg-[#0f103f] text-white ml-2 px-4 py-2 rounded-md font-semibold hover:opacity-90 border-gray-900 border-3 hover:text-gray-900 hover:border-gray-900 hover:bg-white">
             Discover Features
-          </button>
-          <button className="bg-[#c2e092] text-[#0f103f] px-6 py-2 rounded-md font-semibold hover:opacity-90 border-3 border-[#0c0c3d]   hover:border-[#97cb45]">
+          </Link>
+          <a href="https://hub.docker.com/r/vurilo/tmis" target="_blank" rel="noopener noreferrer" className="bg-[#c2e092] text-[#0f103f] px-6 py-2 rounded-md font-semibold hover:opacity-90 border-3 border-[#0c0c3d]   hover:border-[#97cb45]">
             Get started
-          </button>
+          </a>
         </div>
       </div>
     </section>

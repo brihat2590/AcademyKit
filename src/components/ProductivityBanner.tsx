@@ -14,12 +14,12 @@ export default function ProductivityBanner() {
           Streamline tasks and boost productivity effortlessly.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="px-5 py-2 rounded-md bg-white text-[#0c0c3d] font-semibold shadow transition hover:border-[#6a9b29] border-3 border-[#0c0c3d]">
+          <a href="https://docs.academykit.co/introduction" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-md bg-white text-[#0c0c3d] font-semibold shadow transition hover:border-[#6a9b29] border-3 border-[#0c0c3d]">
             Learn how
-          </button>
-          <button className="px-5 py-2 rounded-md bg-[#c2e092] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29] border-[#0c0c3d]">
+          </a>
+          <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-md bg-[#c2e092] text-[#0c0c3d] font-semibold shadow transition border-3 hover:border-[#6a9b29] border-[#0c0c3d]">
             Get started
-          </button>
+          </a>
         </div>
 
         {/* Floating shapes – large + popped out further */}

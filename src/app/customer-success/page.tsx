@@ -8,24 +8,28 @@ export default function page(){
           description:
             "Webflow offers a certification program where users can showcase their proficiency through their project portfolio and completion of Webflow University courses.",
           image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65d17687bba003f13e0958bb_Logo%20Webflow.png", // place this in your /public/images folder
+          href:"https://university.webflow.com/"
         },
         {
           name: "Google Skillshop",
           description:
             "Google certifications focus on Google products such as Google Ads, Google Analytics, and Google Cloud. They assess proficiency in advertising, analytics, and cloud computing using these platforms.",
           image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65d17687d6ab41d1de2f483f_Google%20logo.png",
+          href:"https://skillshop.withgoogle.com/"
         },
         {
           name: "Microsoft Learn",
           description:
             "Microsoft certifications validate proficiency in Microsoft products like Azure, Microsoft 365, and Dynamics 365. They cover roles like cloud computing, productivity, and business applications.",
           image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65d17687d1823f89c6533194_Logo%20microsoft.png",
+          href:"https://learn.microsoft.com/en-us/training/"
         },
         {
           name: "Adobe Learn and Support",
           description:
             "Adobe certifications assess proficiency in Adobe Creative Cloud products like Photoshop, Illustrator, InDesign, and Premiere Pro. They validate skills in digital design, photo editing, video production, and other creative tasks.",
           image: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65d17687fcc333b3a566920f_Adobe%20Logo.png",
+          href:"https://helpx.adobe.com/support/creative-cloud.html"
         },
       ];
 
@@ -165,9 +169,9 @@ export default function page(){
                 {item.name}
               </h3>
               <p className="text-sm text-gray-600 mb-8">{item.description}</p>
-              <div className=" font-medium flex justify-center items-center gap-1 cursor-pointer hover:underline mt-2">
+              <a href={item.href} target="_blank" rel="noopener noreferral" className=" font-medium flex justify-center items-center gap-1 cursor-pointer hover:underline mt-2">
                 See how <span className="ml-1">→</span>
-              </div>
+              </a>
             </div>
           ))}
         </div>
@@ -339,12 +343,12 @@ export default function page(){
 
         {/* Right Buttons */}
         <div className="flex gap-4">
-          <button className="bg-[#0b0c2a] text-white font-semibold px-6 py-2 rounded hover:text-[#1a1b4a] hover:bg-white transition border-3 border-[#0b0c2a]">
+          <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#0b0c2a] text-white font-semibold px-6 py-2 rounded hover:text-[#1a1b4a] hover:bg-white transition border-3 border-[#0b0c2a]">
             Get Started
-          </button>
-          <button className="bg-white text-[#0b0c2a] border-2 border-[#0b0c2a] font-semibold px-6 py-2 rounded hover:bg-gray-100 transition brder-3 hover:border-[#6a9b29]">
+          </a>
+          <a href="https://docs.academykit.co/app-documentation/introduction" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0b0c2a] border-2 border-[#0b0c2a] font-semibold px-6 py-2 rounded hover:bg-gray-100 transition brder-3 hover:border-[#6a9b29]">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </section>

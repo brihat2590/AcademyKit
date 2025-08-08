@@ -88,12 +88,12 @@ export default function AIIntegrated() {
           Achieve personalized eLearning experiences with AcademyKit, tailoring courses to each learner's preferences and needs based on their interests, abilities, and learning styles.
           </p>
           <div className="flex items-center gap-6 pt-4">
-            <button className="bg-[#0A0A2C] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] border-3 border-[#0A0A2C] hover:border-[#0A0A2C]  transition duration-300">
+            <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="bg-[#0A0A2C] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-[#0A0A2C] border-3 border-[#0A0A2C] hover:border-[#0A0A2C]  transition duration-300">
               Get started
-            </button>
-            <button className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-md">
+            </a>
+            <a href="https://docs.academykit.co/app-documentation/introduction" target="_blank" rel="noopener noreferrer" className="text-[#0A0A2C] font-semibold flex items-center gap-2 text-md">
               Learn more <span><ArrowRight/></span>
-            </button>
+            </a>
           </div>
         </div>
 
