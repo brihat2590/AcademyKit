@@ -450,8 +450,8 @@ export default function Navbar() {
             // --- RESOURCES CONTENT - GREEN PANEL ALIGNED RIGHT ---
             <div className="flex max-w-full mx-auto">
               <div className="w-8/14 bg-[#eef7d4] pr-4 pt-10 text-indigo-950 flex justify-end">
-                <div className="flex  w-full  justify-end">
-                  <div className="flex flex-col items-start">
+                <div className="flex  w-full  justify-end ">
+                  <div className="flex flex-col items-start gap-2">
                     <h3 className="font-semibold text-lg mb-4 pl-3">Company</h3>
                     {[
                       ["🐾", "About Us", "Learn what inspired AcademyKit.","/about-us"],
@@ -469,8 +469,8 @@ export default function Navbar() {
                     ))}
                   </div>
 
-                  <div className="flex flex-col items-start ">
-                    <h3 className="font-semibold text-lg pt-1 pl-3 mb-4 ">Get Started</h3>
+                  <div className="flex flex-col items-start gap-3 ">
+                    <h3 className="font-semibold text-lg pt-1 pl-5 mb-4 ">Get Started</h3>
                     {/* {[
                       ["💵", "Pricing", "Start free and upgrade after you are happy."],
                       ["🔍", "Documentation", "Get started here for all help and guides"],
