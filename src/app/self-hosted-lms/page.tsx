@@ -190,7 +190,7 @@ export default function SelfHostedLms() {
     <img
       src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27ee55fcb2c6124add3_Deployment%20Process-p-500.png"
       alt="private"
-      className="rounded-lg w-full"
+      className="max-w-3xl  rounded-lg w-full"
     />
   </section>
 
@@ -202,7 +202,7 @@ export default function SelfHostedLms() {
     <img
       src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d63b905bc1895c69f70a_self-hosted-2-p-500.png"
       alt="on"
-      className="rounded-lg w-full"
+      className="max-w-3xl rounded-lg w-full"
     />
   </section>
 
@@ -214,7 +214,7 @@ export default function SelfHostedLms() {
     <img
       src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27e4ca7183068320720_2-p-500.png"
       alt="enterprise"
-      className="rounded-lg w-full"
+      className="max-w-3xl rounded-lg w-full"
     />
   </section>
 
@@ -226,7 +226,7 @@ export default function SelfHostedLms() {
     <img
       src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d743e0d2c2a15312eea2_self-hosted-3-p-500.png"
       alt="customization"
-      className="rounded-lg w-full"
+      className="max-w-3xl rounded-lg w-full"
     />
   </section>
 </div>

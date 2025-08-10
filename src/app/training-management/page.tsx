@@ -22,6 +22,7 @@ const features = [
       "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface",
     image:
       "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629db56b8a3b236ee55c8fc_6.png",
+      href:"/ai-integrated"
   },
   {
     title: "Training Management",
@@ -29,6 +30,7 @@ const features = [
       "Conduct your training symphony. Plan, deliver, track, report – all for efficient skill development & data-driven success.",
     image:
       "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f873d8cc09bdc56fa4_4.png",
+      href:"/training-management"
   },
   {
     title: "Progress Tracking & Reporting",
@@ -36,6 +38,7 @@ const features = [
       "Maximize Learning with Data-Driven Insights. Tailor Courses for Personalized eLearning Experiences with Academy Kit.",
     image:
       "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f8e9ec66e7544a390d_5.png",
+      href:"/analytics"
   },
 ];
 const NextFeatures=[
@@ -587,7 +590,7 @@ export default function TrainingManagement() {
               key={idx}
               className="rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition duration-300 bg-white"
             >
-              <div className="bg-lime-100 p-4 flex justify-center items-center">
+              <div className="bg-[#c3e192] p-4 flex justify-center items-center">
                 <img
                   src={feature.image}
                   alt={feature.title}
@@ -596,17 +599,18 @@ export default function TrainingManagement() {
               </div>
               <div className="bg-[#0A0A2C] text-white px-6 py-6 flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
-                  <p className="text-sm text-gray-200">{feature.description}</p>
-                </div>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="text-green-400 font-semibold text-sm flex items-center gap-2 hover:underline"
+                  <h3 className="text-lg text-center font-bold mb-3">{feature.title}</h3>
+                  <p className="text-sm text-center text-gray-200">{feature.description}</p>
+                  <div className="mt-6">
+                  <Link
+                    href={feature.href}
+                    className="flex justify-center items-center gap-2 text-[#c3e192] font-semibold text-sm hover:underline"
                   >
                     Learn more <span>→</span>
-                  </a>
+                  </Link>
                 </div>
+                </div>
+                
               </div>
             </div>
           ))}

@@ -17,9 +17,9 @@ export default function Page() {
                   Experience the Full AcademyKit Advantage.
                 </p>
                 <div className="flex items-center justify-center">
-                <button className="mt-8   bg-[#c3e192] text-gray-900 border-3 border-gray-900 hover:border-lime-600 font-semibold px-6 py-2 rounded-md transition">
+                <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="mt-8   bg-[#c3e192] text-gray-900 border-3 border-gray-900 hover:border-lime-600 font-semibold px-6 py-2 rounded-md transition">
                   Try Now!
-                </button>
+                </a>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Page() {
       In the ever-evolving landscape of business today, success requires embracing a growth-oriented mindset. Empower your team with ongoing upskilling and reskilling, essential for sustainable growth and maintaining industry leadership.
       </p>
       <Link
-        href="#"
+        href="/employee-training"
         className="text-[#aad390] font-semibold inline-flex items-center gap-1 hover:text-[#5e862a] transition text-[15px]"
       >
         Learn more <span>&rarr;</span>
@@ -105,7 +105,7 @@ export default function Page() {
       AcademyKit ensures a thorough understanding of your solutions for your sales team. Access all details about your products and services in one central platform, effortlessly share learning materials, and conveniently track progress.
       </p>
       <Link
-        href="/sales-training"
+        href="/capacity-building"
         className="text-[#aad390] font-semibold inline-flex items-center gap-1 hover:text-[#5e862a] transition text-[15px]"
       >
         Learn more <span>&rarr;</span>
@@ -130,8 +130,8 @@ export default function Page() {
 
 
 
-            <button className="px-4 py-2 rounded-md bg-gray-900 text-white hover:text-gray-900 hover:bg-white border-3 border-gray-900 transition duration-300 ease-in-out">Download Now</button>
-            <button className="border-3 border-gray-900 text-gray-900 bg-[#c3e192] px-4 py-2 rounded-md hover:border-lime-600 transition duration-300 ease-in-out">Learn How</button>
+            <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-md bg-gray-900 text-white hover:text-gray-900 hover:bg-white border-3 border-gray-900 transition duration-300 ease-in-out">Download Now</a>
+            <a href="https://docs.academykit.co/introduction" target="_blank" rel="noopener noreferrer" className="border-3 border-gray-900 text-gray-900 bg-[#c3e192] px-4 py-2 rounded-md hover:border-lime-600 transition duration-300 ease-in-out">Learn How</a>
           </div>
 
 
