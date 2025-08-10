@@ -22,7 +22,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "AcademyKit",
-  description: "Affordable LMS for all",
+  description: "Empower your training with AcademyKit: a customizable, self-hosted LMS that enhances learning with AI-driven tools, real-time tracking, and easy deployment. Download now!",
   icons:{
     icon:"/academy.ico"
   }

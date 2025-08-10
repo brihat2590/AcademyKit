@@ -12,25 +12,29 @@ const features = [
     title: "Self Hosted",
     description:
       "Host AcademyKit on your servers, giving you complete control over data privacy, security, and customization.",
-    icon:<FaServer/>
+    icon:<FaServer/>,
+    href:"/self-hosted-lms"
   },
   {
     title: "Learning Management",
     description:
       "Streamline learning management with AcademyKit's intuitive tools for course creation, organization, and scheduling.",
     icon:<SiSololearn/> ,
+    href:"/training-management"
   },
   {
     title: "Progress Tracking and Reporting",
     description:
       "Gain real-time insights into learner progress and performance, empowering you to make informed decisions.",
     icon:<GiProgression/> ,
+    href:"/analytics"
   },
   {
     title: "AI Integrated",
     description:
       "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface.",
     icon:<LuComputer/> ,
+    href:"/ai-integrated"
   },
 ];
 
@@ -62,12 +66,12 @@ const FeaturesSection: React.FC = () => {
                 {feature.title}
               </h4>
               <p className="text-sm text-[#3a3a53] mb-3">{feature.description}</p>
-              <a
-                href="#"
+              <Link
+                href={feature.href}
                 className="text-[#0f103f] font-medium flex items-center gap-1 hover:underline"
               >
                 Learn more <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
