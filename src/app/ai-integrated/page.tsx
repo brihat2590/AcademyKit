@@ -7,19 +7,19 @@ import { BiRightArrow } from "react-icons/bi";
 
 const features = [
   {
-    title: "AI Integrated",
+    title: "Self Hosted",
     description:
-      "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface",
+      "Experience Unmatched Empowerment to Safeguard Sensitive Data, Ensure Compliance, and Enjoy Secure Learning Environments.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629db56b8a3b236ee55c8fc_6.png",
-      href:"/ai-integrated"
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=selfHosted.png&version_id=null",
+      href:"/self-hosted-lms"
   },
   {
     title: "Training Management",
     description:
       "Conduct your training symphony. Plan, deliver, track, report – all for efficient skill development & data-driven success.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f873d8cc09bdc56fa4_4.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=TrainigManagement.png&version_id=null",
       href:"/training-management"
   },
   {
@@ -27,7 +27,7 @@ const features = [
     description:
       "Maximize Learning with Data-Driven Insights. Tailor Courses for Personalized eLearning Experiences with Academy Kit.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f8e9ec66e7544a390d_5.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=progressTracking.png&version_id=null",
       href:"/analytics"
   },
 ];
@@ -148,7 +148,7 @@ export default function AIIntegrated() {
         {/* Right Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d4c4dffe912a16555c14_self-hosted-p-1080.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=session.jpg&version_id=null"
             alt="AI Dashboard"
             className="w-full max-w-xl object-contain rounded-xl shadow-lg rotate-[-6deg]"
           />
@@ -185,7 +185,7 @@ export default function AIIntegrated() {
               AcademyKit features a comprehensive knowledge base, enhancing efficiency by providing easy access to essential learning resources and information.
             </p>
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d98683efd5de5e896dc7_training-management-p-500.png"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=trainings.png&version_id=null"
               alt="knowledge"
               className="max-w-3xl rounded-lg w-full"
             />
@@ -197,7 +197,7 @@ export default function AIIntegrated() {
               AcademyKit's intelligent automation, powered by AI technology, simplifies various tasks within its system. This automation ensures that processes are streamlined, reducing manual effort and the likelihood of errors.
             </p>
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f34f1e8805c27f489df3_AI%20Integrated-1-p-500.png"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=intelligentAutomation.png&version_id=null"
               alt="automation"
               className="max-w-3xl rounded-lg w-full"
             />
@@ -209,7 +209,7 @@ export default function AIIntegrated() {
               AcademyKit's AI capabilities extend to data analysis, providing users with valuable insights into their training programs.
             </p>
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d4c4dffe912a16555c14_self-hosted-p-1080.png"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=session.jpg&version_id=null"
               alt="insights"
               className="max-w-3xl rounded-lg w-full"
             />
@@ -221,7 +221,7 @@ export default function AIIntegrated() {
               Serving as a virtual mentor, AcademyKit's Cognitive Training Assistant offers personalized guidance and feedback to users.
             </p>
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f44049ce5b43a6e0e185_AI%20Integrated-2-p-500.png"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=neverStuck.png&version_id=null"
               className="max-w-3xl rounded-lg w-full"
               alt="train"
             />
