@@ -53,7 +53,7 @@ const UseCases = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 items-start py-6">
           {/* Left Side - Use Cases */}
           <div className="w-full lg:w-1/2">
             {sections.map((section) => (

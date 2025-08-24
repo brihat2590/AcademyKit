@@ -8,21 +8,21 @@ const features = [
     description:
       "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629db56b8a3b236ee55c8fc_6.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=aiIntegrated.png&version_id=null",
   },
   {
     title: "Training Management",
     description:
       "Conduct your training symphony. Plan, deliver, track, report – all for efficient skill development & data-driven success.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f873d8cc09bdc56fa4_4.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=TrainigManagement.png&version_id=null",
   },
   {
     title: "Progress Tracking & Reporting",
     description:
       "Maximize Learning with Data-Driven Insights. Tailor Courses for Personalized eLearning Experiences with Academy Kit.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f8e9ec66e7544a390d_5.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=progressTracking.png&version_id=null",
   },
 ];
 
@@ -40,8 +40,12 @@ const sections = [
     title: "Enterprise-Grade Hosting",
   },
   {
-    id: "customization",
+    id: "fast",
     title: "Custom Deployment Solution",
+  },
+  {
+    id: "customization",
+    title: "Customization and Branding",
   },
 ];
 
@@ -147,7 +151,7 @@ export default function SelfHostedLms() {
         {/* Right Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d4c4dffe912a16555c14_self-hosted-p-1080.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=session.jpg&version_id=null"
             alt="AI Dashboard"
             className="w-full max-w-xl object-contain rounded-xl shadow-lg rotate-[-6deg]"
           />
@@ -157,7 +161,7 @@ export default function SelfHostedLms() {
       
 
       {/* Scroll Sync Section */}
-      <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto">
+      <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto mt-10 md:mt-30 ">
         {/* Left Nav */}
         <nav className="w-1/4 p-6 hidden md:flex sticky top-20 h-screen  flex-col gap-4 border-r mt-12">
           {sections.map((s) => (
@@ -177,18 +181,17 @@ export default function SelfHostedLms() {
         </nav>
 
         {/* Right Scrollable Content */}
-        {/* Right Scrollable Content */}
-<div
-  ref={scrollContainerRef}
-  className="w-full md:w-4/5 overflow-y-auto px-4 md:px-8 py-6 md:py-12 space-y-12 md:space-y-32"
->
+        <div
+          ref={scrollContainerRef}
+          className="w-full md:w-4/5 overflow-y-auto px-4 md:px-8 py-6 md:py-12 space-y-12 md:space-y-32"
+        >
   <section id="private" className="scroll-mt-24 py-6 md:py-10">
     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Secure & Private Cloud Hosting</h2>
     <p className="text-gray-700 mb-6">
-      Elevate your data security and control with our private cloud deployment option. Your data remains yours alone, housed within your organization's private cloud infrastructure.
+    Elevate your data security and control with our private cloud deployment option. Your data remains yours alone, housed within your organization's private cloud infrastructure. This means heightened security and the freedom to customize the app to fit your unique needs and preferences.
     </p>
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27ee55fcb2c6124add3_Deployment%20Process-p-500.png"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=academySetup.png&version_id=null"
       alt="private"
       className="max-w-3xl  rounded-lg w-full"
     />
@@ -197,10 +200,10 @@ export default function SelfHostedLms() {
   <section id="on" className="scroll-mt-24 py-6 md:py-10">
     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Your Data, Your Rules</h2>
     <p className="text-gray-700 mb-6">
-      Take the reins of your data management. With on-premises control, you manage the app within your IT environment.
+    Take the reins of your data management. With on-premises control, you have the power to manage the app within your IT environment, ensuring full data sovereignty and compliance with your organization's policies and regulations. Rest easy, knowing your data is in your hands.
     </p>
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d63b905bc1895c69f70a_self-hosted-2-p-500.png"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=dataRules.png&version_id=null"
       alt="on"
       className="max-w-3xl rounded-lg w-full"
     />
@@ -209,10 +212,21 @@ export default function SelfHostedLms() {
   <section id="enterprise" className="scroll-mt-24 py-6 md:py-10">
     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Unwavering Performance</h2>
     <p className="text-gray-700 mb-6">
-      Enterprise-grade hosting delivers the security, scalability, and performance for demanding workloads.
+    Our enterprise-grade hosting delivers the reliability, security, and scalability you need to support even the most demanding workloads. No more downtime or performance bottlenecks as your business grows.
     </p>
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/664da27e4ca7183068320720_2-p-500.png"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=RolesBased.png&version_id=null"
+      alt="enterprise"
+      className="max-w-3xl rounded-lg w-full"
+    />
+  </section>
+  <section id="fast" className="scroll-mt-24 py-6 md:py-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Fast Deployment Complete Control</h2>
+    <p className="text-gray-700 mb-6">
+    Take Control of Your Deployment Process. Download and deploy on your server for complete control and security. Manage user access, configure security settings, and customize the platform to your specific requirements.
+    </p>
+    <img
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=fastDeploymet.png&version_id=null"
       alt="enterprise"
       className="max-w-3xl rounded-lg w-full"
     />
@@ -221,14 +235,15 @@ export default function SelfHostedLms() {
   <section id="customization" className="scroll-mt-24 py-6 md:py-10">
     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Tailor Your Experience</h2>
     <p className="text-gray-700 mb-6">
-      Customize your app to reflect your brand identity. Modify logos, colors, fonts, and layouts for a consistent visual presence.
+    Customize your app beyond standard templates to perfectly reflect your brand identity. With the ability to modify elements such as logos, colors, fonts, and layouts, you can create a unique and consistent visual representation of your brand. Go beyond generic designs and personalize the look and feel of your app to align with your brand's style and values. By doing so, you can establish a strong brand presence and ensure a cohesive user experience that resonates.
     </p>
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d743e0d2c2a15312eea2_self-hosted-3-p-500.png"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=RolesBased.png&version_id=null"
       alt="customization"
       className="max-w-3xl rounded-lg w-full"
     />
   </section>
+  
 </div>
       </div>
       {/* Feature Cards */}

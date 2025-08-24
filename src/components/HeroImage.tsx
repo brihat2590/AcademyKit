@@ -8,7 +8,7 @@ const HeroImage: React.FC = () => {
     <section className="flex flex-col items-center justify-center py-8 bg-[#fbfef5]">
       <div className="max-w-4xl w-full px-4">
         <Image
-          src={"/hero.png"}
+          src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=landing.jpg&version_id=null"}
           alt="Hero Screenshot"
           className="rounded-xl shadow-lg border border-gray-200"
           layout="responsive"

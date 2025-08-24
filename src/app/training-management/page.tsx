@@ -16,28 +16,30 @@ import { MdDataExploration } from "react-icons/md";
 
 
 const features = [
+
+  {
+    title: "Self Hosted",
+    description:
+      "xperience Unmatched Empowerment to Safeguard Sensitive Data, Ensure Compliance, and Enjoy Secure Learning Environments.",
+    image:
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=selfHosted.png&version_id=null",
+      href:"/self-hosted-lms"
+  },
   {
     title: "AI Integrated",
     description:
       "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629db56b8a3b236ee55c8fc_6.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=aiIntegrated.png&version_id=null",
       href:"/ai-integrated"
   },
-  {
-    title: "Training Management",
-    description:
-      "Conduct your training symphony. Plan, deliver, track, report – all for efficient skill development & data-driven success.",
-    image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f873d8cc09bdc56fa4_4.png",
-      href:"/training-management"
-  },
+  
   {
     title: "Progress Tracking & Reporting",
     description:
       "Maximize Learning with Data-Driven Insights. Tailor Courses for Personalized eLearning Experiences with Academy Kit.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f8e9ec66e7544a390d_5.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=progressTracking.png&version_id=null",
       href:"/analytics"
   },
 ];
@@ -136,7 +138,7 @@ export default function TrainingManagement() {
         {/* Right Image */}
         <div className="w-full lg:w-1/2 flex justify-center pt-4">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d4c4dffe912a16555c14_self-hosted-p-1080.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=session.jpg&version_id=null"
             alt="AI Dashboard"
             className="w-full max-w-xl object-contain rounded-xl shadow-lg rotate-[-6deg]"
           />
@@ -177,7 +179,7 @@ export default function TrainingManagement() {
         <div className="bg-[#B8DB94] p-4 rounded-3xl">
           <div className="bg-white rounded-lg overflow-hidden shadow-md">
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6628a431cfef95a289ff175b_mock-2-p-800.webp" // replace with your image path
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=landing.jpg&version_id=null" // replace with your image path
               alt="AcademyKit Dashboard"
               width={800}
               height={500}
@@ -293,7 +295,7 @@ export default function TrainingManagement() {
           <div>
             <div className="bg-[#B8DB94] rounded-2xl p-4 mb-4 flex items-center justify-center">
               <img
-                src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629dab4bdc74e5f13ffce0d_training-management-1.png" // dummy path
+                src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=individualDashboard.png&version_id=null" // dummy path
                 alt="Individual dashboards"
                 width={300}
                 height={200}
@@ -312,7 +314,7 @@ export default function TrainingManagement() {
           <div>
             <div className="bg-[#B8DB94] rounded-2xl p-4 mb-4 flex items-center justify-center">
               <img
-                src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65e0cf119c10b5eb39c08c4f_Vurilo%20LMS%20center%20combo%20mockup-final-3.png" // dummy path
+                src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=reportsAdminister.png&version_id=null" // dummy path
                 alt="Reports for administrators"
                 width={300}
                 height={200}
@@ -331,7 +333,7 @@ export default function TrainingManagement() {
           <div>
             <div className="bg-[#B8DB94] rounded-2xl p-4 mb-4 flex items-center justify-center">
               <img
-                src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d9d643eea5400f881174_3.png" // dummy path
+                src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=DataInsight.png&version_id=null" // dummy path
                 alt="Data Insights"
                 width={300}
                 height={200}
@@ -349,7 +351,7 @@ export default function TrainingManagement() {
           <div>
             <div className="bg-[#B8DB94] rounded-2xl p-4 mb-4 flex items-center justify-center">
               <img
-                src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65e0ccf8362bbd31f092fed2_Vurilo%20LMS%20center%20combo%20mockup-final-1.png" // dummy path
+                src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=gamification.png&version_id=null" // dummy path
                 alt="Gamification"
                 width={300}
                 height={200}
@@ -421,7 +423,7 @@ export default function TrainingManagement() {
         {/* Right Image */}
         <div className="w-full">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6628a431cfef95a289ff175b_mock-2-p-800.webp"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=landing.jpg&version_id=null"
             alt="Course Creation Screenshot"
             className="rounded-xl w-full shadow-lg"
           />
