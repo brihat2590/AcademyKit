@@ -31,26 +31,27 @@ const features = [
     description:
       "Experience Unmatched Empowerment to Safeguard Sensitive Data, Ensure Compliance, and Enjoy Secure Learning Environments.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629db56b8a3b236ee55c8fc_6.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=selfHosted.png&version_id=null",
 
       href:"/self-hosted-lms"
+  },
+  {
+    title: "AI Integrated",
+    description:
+      "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface.",
+    image:
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=aiIntegrated.png&version_id=null",
+      href:"/ai-integrated"
   },
   {
     title: "Training Management",
     description:
       "Conduct your training symphony. Plan, deliver, track, report – all for efficient skill development & data-driven success.",
     image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f873d8cc09bdc56fa4_4.png",
+      "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=TrainigManagement.png&version_id=null",
       href:"/training-management"
   },
-  {
-    title: "Progress Tracking & Reporting",
-    description:
-      "Maximize Learning with Data-Driven Insights. Tailor Courses for Personalized eLearning Experiences with Academy Kit.",
-    image:
-      "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d8f8e9ec66e7544a390d_5.png",
-      href:"/analytics"
-  },
+  
 ];
 
 const sections = [
@@ -105,7 +106,7 @@ export default function AIIntegrated() {
         {/* Right Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65e0cf119c10b5eb39c08c4f_Vurilo%20LMS%20center%20combo%20mockup-final-3.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=QualityAssurance.png&version_id=null"
             alt="AI Dashboard"
             className="w-full max-w-xl object-contain rounded-xl shadow-lg rotate-[-6deg]"
           />
@@ -167,7 +168,7 @@ export default function AIIntegrated() {
         <div className="flex justify-center">
           <div className="bg-[#c5ea9b] p-4 rounded-2xl">
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f4ecfbc797fc942beaea_Analytics-p-1080.png"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=sessionInformative.png&version_id=null"
               alt="Analytics Screenshot"
               width={600}
               height={400}
