@@ -70,7 +70,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="bg-[#fbfef5] flex items-center justify-center px-6 md:px-20 py-20">
+    <section className="bg-[#fbfef5] flex items-center justify-center px-6 md:px-20 py-20 border-b border-gray-200">
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-10">
         {/* Left Section */}
         <div className="text-[#0c0636] space-y-6">

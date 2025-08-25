@@ -89,7 +89,7 @@ export default function HeroSection() {
 {/* Right: Get A Demo Circle */}
 <div className="w-[30%] flex justify-start items-center relative -ml-16">
   {/* Shifted left using -ml-16 */}
-  <div className="hidden md:flex    relative group w-64 h-64 items-center justify-center">
+  <div className="hidden lg:flex    relative group w-64 h-64 items-center justify-center">
     {/* Big Circle (centered) */}
     <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
 
@@ -119,14 +119,14 @@ export default function HeroSection() {
             workforce.
           </p>
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a05196e1404d06a1a6388_on-boarding-p-800.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=onBoarding.png&version_id=null"
             alt="onboarding"
             className="rounded-lg w-full sm:max-w-xl mx-auto mt-8 mb-5"
           />
         </div>
         <div className="max-w-7xl mx-auto mt-4">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6650113dd8f61520ebd53c59_Mockup-%20on%20boarding-p-2000.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=QA%20big.png&version_id=null"
             alt="onboarding"
             className="w-full rounded-lg"
           />

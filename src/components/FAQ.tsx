@@ -21,7 +21,7 @@ export default function FAQ() {
         <div className="grid md:grid-cols-3 gap-10 text-sm md:text-base">
           {/* FAQ 1 */}
           <div className="mb-8">
-            <h3 className="font-semibold mb-2">Is It Really Free?</h3>
+            <h3 className="font-semibold mb-2">Is It Really Free</h3>
             <p className="">
               Yes, if your team is small, then AcademyKit is free for you for a
               lifetime. You may download and use it within your premises with
