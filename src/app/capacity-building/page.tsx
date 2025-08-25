@@ -22,21 +22,21 @@ export default function page(){
           title: "Identify Training Needs",
           description:
             "Leverage performance data and AI insights to precisely identify individual training needs, ensuring laser-focused skill development.",
-          arrow: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65c903d05f5bc757ca1ac8f1_decoration-arrow-01.svg", // ← dummy arrow path
+          arrow: "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=down.svg&version_id=null", // ← dummy arrow path
         },
         {
           number: "02",
           title: "Deliver Targeted Learning",
           description:
             "Trigger relevant training content and notifications only for those who need them, streamlining learning and saving time.",
-          arrow: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65c903d05f5bc757ca1ac8f2_decoration-arrow-02.svg",
+          arrow: "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=up.svg&version_id=null",
         },
         {
           number: "03",
           title: "Boost Sales Enablement",
           description:
             "Provide on-demand access to training modules, ensuring salespeople are equipped before each pitch.",
-          arrow: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65c903d05f5bc757ca1ac8f1_decoration-arrow-01.svg",
+          arrow: "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=down.svg&version_id=null",
         },
         {
           number: "04",
@@ -79,8 +79,8 @@ export default function page(){
       </div>
     </section>
     
-    <section className="bg-[#fbfef5]  flex flex-col  md:px-16 md:py-24 px-8 py-10 ">
-        <div className="max-w-7xl mx-auto flex flex-col">
+    <section className="bg-[#fbfef5]  flex flex-col  md:px-16 md:py-24  py-10 overflow-hidden ">
+        <div className="max-w-7xl  flex flex-col md:mx-auto">
 
 
             <h2 className=" text-center text-2xl sm:text-3xl  md:text-5xl font-semibold">Product Knowledge to Sales<br></br>Mastery</h2>
@@ -90,10 +90,10 @@ export default function page(){
             Build strategic thinkers, not just salespeople. Empower your team with in-depth product understanding and watch your sales magic unfold.
 
             </p>
-            <img src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d26437d7c761e392542d_customer%20success-p-1080.png"
+            <img src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=mordernDevelopment.png&version_id=null"
             alt="onboarding"
-            className="rounded-lg max-w-xl mx-auto mt-8 sm:mt-15 mb-5"
-            />
+            className="h-full w-full rounded-lg max-w-xl md:max-w-2xl mx-auto mt-8 sm:mt-15 mb-5 px-3"
+            />  
 
 
         </div>
@@ -106,7 +106,7 @@ export default function page(){
         <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">Our Training Programs</h2>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto place-items-center ">
         {/* Product Training */}
         <div>
           <div className="flex justify-center mb-4">
@@ -115,8 +115,8 @@ export default function page(){
             </div>
           </div>
           <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center pb-3">Product Training</h3>
-          <ul className="space-y-4 text-left text-gray-800">
-            <li className="flex gap-3 items-start">
+          <ul className="space-y-4 text-left text-md text-gray-800">
+            <li className="flex gap-3 items-start  ">
               <CheckIcon />
               <span>Introducing the product effectively</span>
             </li>
@@ -145,7 +145,7 @@ export default function page(){
           </div>
           <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center pb-3">Process Training</h3>
           <ul className="space-y-4 text-left text-gray-800">
-            <li className="flex gap-3 items-start">
+            <li className="flex gap-3 ">
               <CheckIcon />
               <span>Getting familiar with the sales process</span>
             </li>
@@ -214,8 +214,8 @@ export default function page(){
             return (
               <div
                 key={index}
-                className={`flex flex-col items-center px-2 ${
-                  index % 2 !== 0 ? "mt-16" : "mt-0"
+                className={`flex flex-col items-center px-2 py-4 ${
+                  index % 2 !== 0 ? "md:mt-16" : "mt-0"
                 }`}
               >
                 {/* Arrow ABOVE */}
@@ -223,7 +223,7 @@ export default function page(){
                   <img
                     src={step.arrow}
                     alt="arrow"
-                    className="mb-4 w-full h-auto"
+                    className=" md:mb-4 w-full hidden md:block h-auto "
                   />
                 )}
 
@@ -231,17 +231,17 @@ export default function page(){
                 <h3 className="text-blue-600 font-semibold text-xl">
                   {step.number}
                 </h3>
-                <h4 className="text-[#0f172a] font-bold text-lg my-2">
+                <h4 className="text-[#0f172a] font-bold text-xl my-2">
                   {step.title}
                 </h4>
-                <p className="text-gray-600 text-sm">{step.description}</p>
+                <p className="text-gray-600 text-md max-w-sm">{step.description}</p>
 
                 {/* Arrow BELOW */}
                 {showArrow && arrowBelow && (
                   <img
                     src={step.arrow}
                     alt="arrow"
-                    className="mt-4 w-full"
+                    className=" md:mt-4 w-full hidden md:block"
                   />
                 )}
               </div>
@@ -255,9 +255,9 @@ export default function page(){
         <div className="max-w-7xl mx-auto bg-[#fbfef5] py-20 px-4">
 
 
-            <img src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f6353e4626fcb405cc44_capacity%20building.png"
+            <img src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=assessment.png&version_id=null"
             alt="hero"
-            className="w-full"
+            className="w-full px-4 py-"
             />
         </div>
     </section>

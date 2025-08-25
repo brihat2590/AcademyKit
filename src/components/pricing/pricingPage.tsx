@@ -98,7 +98,7 @@ export default function PricingSection() {
             <div className="mb-6">
               <h3 className="text-xl font-bold text-gray-900">Premium</h3>
               <div className="mt-4">
-                <div className=""><span className='text-4xl font-bold text-gray-900'>{!isAnnual?"$99/":"$950/"} </span><span className='font-light'>Month</span></div>
+                <div className=""><span className='text-4xl font-bold text-gray-900'>{!isAnnual?"$99/":"$950/"} </span><span className='font-light'>{!isAnnual?" Month":"Year"}</span></div>
                 
                 
               </div>
