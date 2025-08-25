@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function AboutUs(){
     return(
-        <div>
+        <div className="border-b border-gray-200">
 
-            <section className="w-full bg-[#0a0a32] py-25 flex flex-col items-center text-center">
+            <section className="w-full bg-[#0a0a32] py-25 flex flex-col items-center text-center ">
                 <h2 className="mt-8 text-white text-4xl md:text-7xl font-extrabold leading-tight">
                     Start working with us{" "}<br></br>
                     <span className="text-[#b1ebb8] relative inline-block">
@@ -57,7 +57,7 @@ export default function AboutUs(){
                           alt="shape1"
                           width={220}
                           height={220}
-                          className="hidden md:block absolute bottom-[-60px] left-[-40px] w-60 h-60 z-20"
+                          className="hidden  md:block absolute bottom-[-60px] left-[-40px] w-60 h-60 z-20"
                         />
                         <Image
                           src="/shapes/shape2.png"

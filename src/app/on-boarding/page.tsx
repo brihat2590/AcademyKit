@@ -198,7 +198,7 @@ export default function HeroSection() {
           {/* Self Hosted */}
           <div className="text-center md:text-left flex flex-col items-start">
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65c8f34e509232756502678c_Vurilo%20website%20icons.svg"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=selfHostedIcon.svg&version_id=null"
               alt="placeholder"
               className="w-32 md:w-1/2 mb-4"
             />

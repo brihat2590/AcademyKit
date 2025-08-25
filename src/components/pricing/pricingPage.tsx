@@ -139,7 +139,7 @@ export default function PricingSection() {
 
               <div>
                 {/* <GiZipper/> */}
-                <PiDeviceMobileSlashFill/>
+                <PiDeviceMobileSlashFill size={40}/>
 
 
               </div>

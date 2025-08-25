@@ -151,7 +151,7 @@ const FAQ = () => {
         </div>
       </div>
 
-      <section className="relative bg-[#fbfef5] pb-10 md:py-30 px-4 overflow-visible mt-10">
+      <section className="relative bg-[#fbfef5] pb-20 md:py-30 px-4 overflow-visible mt-10">
         <div className="relative max-w-7xl mx-auto bg-[#0a0b34] text-white rounded-3xl px-8 py-24 text-center overflow-visible z-10">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
             Have a question not answered here?

@@ -31,9 +31,9 @@ export default function page() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="w-full max-w-xl pl-25  "> {/* Added margin-left here */}
+          <div className="w-full max-w-xl pl-0 lg:pl-25 py-10 px-2  "> {/* Added margin-left here */}
             <img
-              src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d366f1728214096b4458_solutions-p-1600.png"
+              src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=access.png&version_id=null"
               alt="Laptop with AcademyKit dashboard"
               width={700}
               height={400}

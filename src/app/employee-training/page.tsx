@@ -227,7 +227,7 @@ export default function page(){
         {/* Left Section (Image and Pricing) */}
         <div className="text-center md:text-left flex flex-col justify-center items-start ">
           {/* Placeholder for Image */}
-          <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65c8f34e509232756502678c_Vurilo%20website%20icons.svg"} alt="placholder"
+          <img src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=selfHostedIcon.svg&version_id=null"} alt="placholder"
           className="md:w-1/2 "
           />
 
