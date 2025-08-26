@@ -47,37 +47,40 @@ export default function page(){
       ];
 
     return(
-        <div className="bg-[#fbfef5]">
+        <div className="bg-[#fbfef5] border-b border-gray-200 pb-10">
 
-<section className=" bg-[#01002A] text-[#f4e26d] flex  md:px-16 md:py-40 px-8 py-10">
-      {/* Left: Headings */}
-      <div className="w-[70%] max-w-3xl mx-auto ">
-        <h1 className="text-5xl  md:text-[84px] font-light leading-tight mb-12">
-          Don't Just Sell <br /> Sell Smart!
-        </h1>
-        <p className="text-sm tracking-widest text-white/80 uppercase">
-          INVEST IN TRAINING THAT ELEVATES YOUR <br />SALES GAME
-          
-        </p>
-      </div>
+<section className="bg-[#01002A] text-[#f4e26d] flex flex-col md:flex-row md:px-16 md:py-40 px-8 py-10">
+  {/* Left: Headings */}
+  <div className="w-full md:w-[70%] max-w-3xl mx-auto text-center md:text-left mb-10 md:mb-0">
+    <h1 className="text-4xl md:text-[84px] font-light leading-tight mb-6 md:mb-12">
+      Don't Just Sell <br /> Sell Smart!
+    </h1>
+    <p className="text-sm tracking-widest text-white/80 uppercase">
+      INVEST IN TRAINING THAT ELEVATES YOUR <br />SALES GAME
+    </p>
+  </div>
 
-      {/* Right: Get A Demo Circle */}
-      <div className="w-[30%] flex justify-start items-center relative -ml-16">
-        {/* Shifted left using -ml-16 */}
-        <div className="hidden md:flex    relative group w-64 h-64 items-center justify-center">
-          {/* Big Circle (centered) */}
-          <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
+  {/* Right: Get A Demo Circle */}
+  <div className="w-full md:w-[30%] flex justify-center md:justify-start items-center relative md:-ml-16">
+    {/* Circle container (hidden on small, visible on md+) */}
+    <div className="hidden md:flex relative group w-64 h-64 items-center justify-center">
+      {/* Big Circle */}
+      <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
 
-          {/* Small Circle (starts left, moves right on hover) */}
-          <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+      {/* Small Circle (moves on hover) */}
+      <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
 
-          {/* Button */}
-          <Link href={"/request-demo"} className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2">
-            GET A DEMO
-          </Link>
-        </div>
-      </div>
-    </section>
+      {/* Button */}
+      <Link
+        href="/request-demo"
+        className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2"
+      >
+        GET A DEMO
+      </Link>
+    </div>
+  </div>
+</section>
+
     
     <section className="bg-[#fbfef5]  flex flex-col  md:px-16 md:py-24  py-10 overflow-hidden ">
         <div className="max-w-7xl  flex flex-col md:mx-auto">

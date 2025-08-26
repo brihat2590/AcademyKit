@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function page(){
     return(
-        <div className=" h-full pt-5   px-6 mb-10 bg-[#fbfef5]">
+        <div className=" h-full pt-5   px-6 pb-10 bg-[#fbfef5] border-b border-gray-200">
 
 
 <iframe src='https://outlook.office365.com/owa/calendar/RequestDemo@sursatech.com/bookings/' width='100%' height='950' scrolling='yes' className="border-0"></iframe>
@@ -35,14 +35,14 @@ export default function page(){
 
     {/* Left Image */}
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6649acb817674d171c616308_AK%20admin-1-p-500.png"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=landing.jpg&version_id=null"
       alt="Left Panel"
       className="hidden md:block absolute -left-5 top-1/3 -translate-y-1/2 w-[250px] rotate-[-20deg] z-20"
     />
 
     {/* Right Image */}
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6649ad123391c37b394830dc_AK%20training-p-500.png"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=trainings.png&version_id=null"
       alt="Right Panel"
       className="hidden md:block absolute -right-3 top-2/3 -translate-y-1/2 w-[250px] rotate-[20deg] z-20"
     />

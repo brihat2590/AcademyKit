@@ -74,35 +74,57 @@ export default function HeroSection() {
   return (
     <div className="bg-[#fbfef5]">
       {/* Hero Section */}
-      <section className=" bg-[#01002A] text-[#f4e26d] flex  md:px-16 md:py-40 px-8 py-10">
+      <section className="bg-[#01002A] text-[#f4e26d] flex flex-col lg:flex-row md:px-16 md:py-40 px-8 py-10">
+  {/* Left: Headings */}
+  <div className="w-full lg:w-[70%] max-w-3xl mx-auto text-center lg:text-left">
+    <h1 className="text-5xl md:text-[84px] font-light leading-tight mb-12">
+      Optimize The New <br /> Hire Experience
+    </h1>
+    <p className="text-sm tracking-widest text-white/80 uppercase">
+      Streamline onboarding, and boost <br />
+      productivity from day one.
+    </p>
 
-<div className="w-[70%] max-w-3xl mx-auto ">
-  <h1 className="text-5xl  md:text-[84px] font-light leading-tight mb-12">
-    Optimize The New <br /> Hire Experience
-  </h1>
-  <p className="text-sm tracking-widest text-white/80 uppercase">
-    Streamline onboarding, and boost <br />
-    productivity from day one.
-  </p>
-</div>
+    {/* Circle BELOW on medium screens */}
+    <div className="hidden md:flex lg:hidden justify-center mt-12">
+      <div className="relative group w-64 h-64 items-center justify-center flex">
+        {/* Big Circle */}
+        <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
 
-{/* Right: Get A Demo Circle */}
-<div className="w-[30%] flex justify-start items-center relative -ml-16">
-  {/* Shifted left using -ml-16 */}
-  <div className="hidden lg:flex    relative group w-64 h-64 items-center justify-center">
-    {/* Big Circle (centered) */}
-    <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
+        {/* Small Circle */}
+        <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
 
-    {/* Small Circle (starts left, moves right on hover) */}
-    <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
-
-    {/* Button */}
-    <Link href={"/request-demo"} className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2">
-      GET A DEMO
-    </Link>
+        {/* Button */}
+        <Link
+          href={"/request-demo"}
+          className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2"
+        >
+          GET A DEMO
+        </Link>
+      </div>
+    </div>
   </div>
-</div>
-</section> 
+
+  {/* Right: Circle stays at side ONLY for large screens */}
+  <div className="hidden lg:flex w-[30%] justify-start items-center relative -ml-16">
+    <div className="relative group w-64 h-64 items-center justify-center flex">
+      {/* Big Circle */}
+      <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
+
+      {/* Small Circle */}
+      <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+
+      {/* Button */}
+      <Link
+        href={"/request-demo"}
+        className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2"
+      >
+        GET A DEMO
+      </Link>
+    </div>
+  </div>
+</section>
+ 
 
       {/* Description & Image Section */}
       <section className="bg-[#fbfef5] flex flex-col md:px-16 md:py-24 px-6 py-10">
