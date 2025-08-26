@@ -4,19 +4,19 @@ import { FaComputer } from "react-icons/fa6";
 
 export default function Page() {
     return (
-      <div className="bg-[#fbfef5]">
+      <div className="bg-[#fbfef5] border-b border-gray-200">
         <div className="bg-[#0A0A2A]  text-white py-20 px-6 lg:px-20">
           <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row justify-end items-center pt-4 sm:pt-10">
             {/* Left Text Section - Shifted Right */}
             <div className="w-full lg:w-7/12 flex justify-end   ">
-              <div className="max-w-3xl">
+              <div className="max-w-3xl ">
                 <h1 className="text-4xl sm:text-[80px] font-bold leading-tight ">
                   Eliminate Chaos,<br />Embrace Clarity
                 </h1>
                 <p className="text-lg text-center text-gray-300 mt-6">
                   Experience the Full AcademyKit Advantage.
                 </p>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center  ">
                 <a href="https://hub.docker.com/r/academykit/academy" target="_blank" rel="noopener noreferrer" className="mt-8   bg-[#c3e192] text-gray-900 border-3 border-gray-900 hover:border-lime-600 font-semibold px-6 py-2 rounded-md transition">
                   Try Now!
                 </a>
@@ -25,9 +25,9 @@ export default function Page() {
             </div>
   
             {/* Right Image Section */}
-            <div className="w-full lg:w-5/12 mb-12 lg:mb-0 flex justify-center">
+            <div className="w-full lg:w-5/12 mb-12 lg:mb-0  justify-center hidden lg:flex">
               <img
-                src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d366f1728214096b4458_solutions-p-2000.png"
+                src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=assessment.png&version_id=null"
                 alt="AcademyKit Dashboard"
                 className="w-full h-auto max-w-xs md:max-w-md"
               />
@@ -43,9 +43,9 @@ export default function Page() {
           <p className="py-6  text-gray-700 text-center">Take Control of Your Learning Journey with AcademyKit</p>
 
         </section>
-    <div className="flex flex-wrap justify-center gap-8"> {/* Changed to stretch for equal height */}
+    <div className="flex flex-wrap justify-center gap-8 px-4"> {/* Changed to stretch for equal height */}
     {/* Card 1 */}
-    <div className="bg-[#0b0c2a] text-white rounded-2xl px-7 py-9 w-full max-w-2xl flex flex-col items-center"> {/* Increased padding slightly */}
+    <div className="bg-[#0b0c2a] text-white rounded-2xl px-5 py-6 w-full max-w-2xl flex flex-col items-center "> {/* Increased padding slightly */}
       <div className="mb-5 border-2 bg-[#aad390] p-4 rounded-full">
         <FaHandshake/>
         

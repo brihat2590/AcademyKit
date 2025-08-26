@@ -411,7 +411,7 @@ export default function Navbar() {
                 <h3 className="font-light text-md mb-6">Resources</h3>
                 
                 <a href={"https://docs.academykit.co/introduction"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
-                    <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f91_nav-image-06.jpg"} className="w-45 h-25 rounded object-cover" />
+                    <img src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=howTo.jpg&version_id=null"} className="w-45 h-25 rounded object-cover" />
                     <div>
                       <p className="">How to get started</p>
                       <p className="font-extralight text-sm py-2">Jump right in - Get an overview of the basics and start building.</p>
@@ -426,7 +426,7 @@ export default function Navbar() {
                   <Link href={"/why"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer" onClick={()=>{
                     setHoveredDropdown(null)
                   }}>
-                    <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f8a_image-06.jpeg"} className="w-45 h-25 rounded object-cover" />
+                    <img src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=advFeatures.jpeg&version_id=null"} className="w-45 h-25 rounded object-cover" />
                     <div>
                       <p className="">Advanced Features</p>
                       <p className="font-extralight text-sm py-2">Explore advanced analytics, shortcuts, and more.</p>
@@ -527,7 +527,7 @@ export default function Navbar() {
                   </div>
                 ))} */}
                 <a href={"https://docs.academykit.co/introduction"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
-                    <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f91_nav-image-06.jpg"} className="w-45 h-25 rounded object-cover" />
+                    <img src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=howTo.jpg&version_id=null"} className="w-45 h-25 rounded object-cover" />
                     <div>
                       <p className="">How to get started</p>
                       <p className="font-extralight text-sm py-2">Jump right in - Get an overview of the basics and start building.</p>
@@ -541,7 +541,7 @@ export default function Navbar() {
                   <Link href={"/why"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer" onClick={()=>{
                     setHoveredDropdown(null)
                   }}>
-                    <img src={"https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f8a_image-06.jpeg"} className="w-45 h-25 rounded object-cover" />
+                    <img src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=advFeatures.jpeg&version_id=null"} className="w-45 h-25 rounded object-cover" />
                     <div>
                       <p className="">Advanced Features</p>
                       <p className="font-extralight text-sm py-2">Explore advanced analytics, shortcuts, and more.</p>

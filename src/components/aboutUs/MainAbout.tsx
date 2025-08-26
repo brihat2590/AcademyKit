@@ -23,7 +23,7 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-20">
         <div className="max-w-md flex-shrink-0">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629db56b8a3b236ee55c8fc_6.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=selfHosted.png&version_id=null"
             alt="Profile Section"
             width={600}
             height={400}
@@ -48,7 +48,7 @@ const AboutSection = () => {
         </div>
         <div className="max-w-md flex-shrink-0">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f1e0a1231b0ce6ad5bce_AI%20settings%20-2-p-500.webp"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=unleash.webp&version_id=null"
             alt="AI Integration"
             width={800}
             height={600}
@@ -60,7 +60,7 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-20">
         <div className="max-w-md flex-shrink-0">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a0aba8f6b04cee2902a88_about-us.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=TailoredSolution.png&version_id=null"
             alt="Profile Section"
             width={600}
             height={400}
@@ -86,7 +86,7 @@ Unlock the full potential of your products with AcademyKit LMS. Our platform emp
         </div>
         <div className="max-w-md flex-shrink-0">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d9d643eea5400f881174_3.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=assessmentAgain.png&version_id=null"
             alt="AI Integration"
             width={800}
             height={600}
@@ -98,7 +98,7 @@ Unlock the full potential of your products with AcademyKit LMS. Our platform emp
       <div className="flex flex-col md:flex-row items-center justify-center gap-20">
         <div className="max-w-md flex-shrink-0">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a081337944f4cf8275cf3_2.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=certificates1.png&version_id=null"
             alt="Profile Section"
             width={600}
             height={400}
@@ -115,7 +115,7 @@ Unlock the full potential of your products with AcademyKit LMS. Our platform emp
       <div className="flex flex-col md:flex-row items-center justify-center gap-20">
         <div className="max-w-md flex-shrink-0">
           <img
-            src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a0c7cb5daaabe3bacfd5f_about-us-1-p-800.png"
+            src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=driver.png&version_id=null"
             alt="Profile Section"
             width={600}
             height={400}
