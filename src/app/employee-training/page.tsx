@@ -65,38 +65,61 @@ export default function page(){
     },
   ]
     return(
-    <div className="bg-[#fbfef5]">
+    <div className="bg-[#fbfef5] border-b border-gray-200">
 
 
-    <section className=" bg-[#01002A] text-[#f4e26d] flex  md:px-16 md:py-40 px-8 py-10">
-      {/* Left: Headings */}
-      <div className="w-[70%] max-w-3xl mx-auto ">
-        <h1 className="text-5xl  md:text-[84px] font-light leading-tight mb-12">
-          Take Your Team <br /><span className="text-white">To The Next Level</span> 
-        </h1>
-        <p className="text-sm tracking-widest text-white/80 uppercase">
-            JOIN US FOR THE TRAINING, AND STICK<br />
-          AROUND FOR THE EXCEPTIONAL EXPERIENCE.
-        </p>
-      </div>
+<section className=" bg-[#01002A] text-[#f4e26d] flex flex-col lg:flex-row md:px-16 md:py-40 px-8 py-10">
+        {/* Left: Headings */}
+        <div className="w-full lg:w-[70%] max-w-3xl mx-auto text-center lg:text-left">
+          <h1 className="text-5xl md:text-[84px] font-light leading-tight mb-12">
+            Take Your Team <br />
+            <span className="text-white">To The Next Level</span>
+          </h1>
+          <p className="text-sm tracking-widest text-white/80 uppercase">
+            JOIN US FOR THE TRAINING, AND STICK
+            <br />
+            AROUND FOR THE EXCEPTIONAL EXPERIENCE.
+          </p>
 
-      {/* Right: Get A Demo Circle */}
-      <div className="w-[30%] flex justify-start items-center relative -ml-16">
-        {/* Shifted left using -ml-16 */}
-        <div className="hidden md:flex    relative group w-64 h-64 items-center justify-center">
-          {/* Big Circle (centered) */}
-          <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
+          {/* Circle appears BELOW on medium screens */}
+          <div className="hidden md:flex lg:hidden justify-center mt-12">
+            <div className="relative group w-64 h-64 items-center justify-center flex">
+              {/* Big Circle */}
+              <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
 
-          {/* Small Circle (starts left, moves right on hover) */}
-          <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+              {/* Small Circle */}
+              <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
 
-          {/* Button */}
-          <Link href={"/request-demo"} className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2">
-            GET A DEMO
-          </Link>
+              {/* Button */}
+              <Link
+                href={"/request-demo"}
+                className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2"
+              >
+                GET A DEMO
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+
+        {/* Right: Circle stays at side ONLY for large screens */}
+        <div className="hidden lg:flex w-[30%] justify-start items-center relative -ml-16">
+          <div className="relative group w-64 h-64 items-center justify-center flex">
+            {/* Big Circle */}
+            <div className="absolute w-64 h-64 rounded-full border border-lime-300" />
+
+            {/* Small Circle */}
+            <div className="absolute w-44 h-44 rounded-full border border-lime-300 transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+
+            {/* Button */}
+            <Link
+              href={"/request-demo"}
+              className="relative z-10 text-white tracking-widest text-sm transform -translate-x-20 transition-transform duration-500 ease-in-out group-hover:translate-x-0 pl-2"
+            >
+              GET A DEMO
+            </Link>
+          </div>
+        </div>
+      </section>
     <section className="bg-[#fbfef5] flex flex-col px-6 sm:px-8 md:px-16 py-10 md:py-24">
   <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
     <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight">
@@ -112,7 +135,7 @@ export default function page(){
     </p>
 
     <img
-      src="https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6628a431cfef95a289ff175b_mock-2-p-800.webp"
+      src="https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=landing.jpg&version_id=null"
       alt="onboarding"
       className="rounded-lg border-4 border-gray-900 w-full max-w-xl mt-8 mb-5"
     />
@@ -214,7 +237,7 @@ export default function page(){
 
         <div>
 
-            <img src='https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/662a07cef64ed9bae11c0138_on-boarding-1-p-2000.png'
+            <img src='https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=usersBig.png&version_id=null'
             alt="hero"
             className="w-full"
             
