@@ -505,27 +505,7 @@ export default function Navbar() {
 
               <div className="w-6/14 bg-gray-50 px-10 py-12 text-indigo-950 flex flex-col items-start">
                 <h3 className="font-light text-md mb-6">Resources</h3>
-                {/* {[
-                  {
-                    title: "How to get started",
-                    desc: "Jump right in - Get an overview of the basics and start building.",
-                    img: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f91_nav-image-06.jpg",
-                  },
-                  {
-                    title: "Advanced features",
-                    desc: "Explore advanced analytics, shortcuts, and more.",
-                    img: "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/65aa74211fa1ac0857a92f8a_image-06.jpeg",
-                  },
-                ].map(({ title, desc, img }) => (
-                  <div key={title} className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
-                    <img src={img} className="w-45 h-25 rounded object-cover" />
-                    <div>
-                      <p className="font-semibold">{title}</p>
-                      <p className="font-extralight text-sm">{desc}</p>
-                      <p className="text-indigo-950 font-semibold text-sm mt-1">Learn More</p>
-                    </div>
-                  </div>
-                ))} */}
+                
                 <a href={"https://docs.academykit.co/introduction"}  className="flex items-start gap-6 mb-8 hover:bg-white rounded-xl px-2 py-2 cursor-pointer">
                     <img src={"https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=howTo.jpg&version_id=null"} className="w-45 h-25 rounded object-cover" />
                     <div>

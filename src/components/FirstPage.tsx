@@ -26,7 +26,7 @@ export default function Firstpage() {
             transition={{ duration: 0.8, delay: 0.1, ease: "easeInOut" }}
             className="text-[#0c0c3d] text-4xl sm:text-6xl font-semibold md:tracking-normal md:leading-18 mb-6"
           >
-            Beyond just training: Join <br />
+            Beyond just training: Join <br className="hidden md:block" />
             us for an immersive<br />
             experience that<br />
             empowers you.

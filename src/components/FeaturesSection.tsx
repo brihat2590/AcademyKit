@@ -14,28 +14,28 @@ const features = [
     title: "Self Hosted",
     description:
       "Host AcademyKit on your servers, giving you complete control over data privacy, security, and customization.",
-    icon: <FaServer />,
+    icon: <FaServer size={20} />,
     href: "/self-hosted-lms",
   },
   {
     title: "Learning Management",
     description:
       "Streamline learning management with AcademyKit's intuitive tools for course creation, organization, and scheduling.",
-    icon: <SiSololearn />,
+    icon: <SiSololearn size={20} />,
     href: "/training-management",
   },
   {
     title: "Progress Tracking and Reporting",
     description:
       "Gain real-time insights into learner progress and performance, empowering you to make informed decisions.",
-    icon: <GiProgression />,
+    icon: <GiProgression size={20} />,
     href: "/analytics",
   },
   {
     title: "AI Integrated",
     description:
       "Designed to cater to both instructors and students, equipped with user-friendly functionalities and an intuitive interface.",
-    icon: <LuComputer />,
+    icon: <LuComputer size={20} />,
     href: "/ai-integrated",
   },
 ];

@@ -11,7 +11,7 @@ const UseCases = () => {
       description:
         "Enable customers to get most of your product. Reduce churn and increase loyalty.",
       image:
-        "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629dab4bdc74e5f13ffce0d_training-management-1.png",
+        "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=useCases1.png&version_id=null",
       href: "/customer-success",
     },
     {
@@ -19,7 +19,7 @@ const UseCases = () => {
       description:
         "Onboard new hires, upskill existing employees, and ensure compliance with mandatory training.",
       image:
-        "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629f6353e4626fcb405cc44_capacity%20building-p-800.png",
+        "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=useCases2.png&version_id=null",
       href: "/employee-training",
     },
     {
@@ -27,7 +27,7 @@ const UseCases = () => {
       description:
         "Train partners resellers, or franchises to improve product knowledge and sales skills",
       image:
-        "https://cdn.prod.website-files.com/65aa7210793f3233f5dc51e7/6629d26437d7c761e392542d_customer%20success-p-800.png",
+        "https://s3.sursatech.com/api/v1/buckets/academykit/objects/download?preview=true&prefix=useCases3.png&version_id=null",
       href: "/capacity-building",
     },
   ];
