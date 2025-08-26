@@ -5,7 +5,7 @@ import React from "react";
 
 export default function FAQ() {
   return (
-    <section className="bg-[#fbfef5] px-6 md:px-16 py-12 text-indigo-950      ">
+    <section className="bg-[#fbfef5] px-6 md:px-16 py-12 text-indigo-950 border-b border-gray-200      ">
     
       <div className="max-w-7xl mx-auto ">
         <h4 className="text-sm font-semibold text-gray-500">Support</h4>

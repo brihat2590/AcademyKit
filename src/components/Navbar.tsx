@@ -462,7 +462,10 @@ export default function Navbar() {
                       }}>
                         <div className="bg-[#b6df87] p-3 rounded-full">{icon}</div>
                         <div>
-                          <p className="font-semibold">{title}</p>
+                          <p className="font-semibold flex items-center gap-2">{title}
+
+                            {title=="FAQs"?<span className="hidden lg:block text-xs font-light bg-[#0b0b2b] text-white py-0.5 rounded-full px-1">Your Query Answered</span>:null}
+                          </p>
                           <p className="text-sm font-extralight leading-relaxed">{desc}</p>
                         </div>
                       </Link>
