@@ -166,7 +166,7 @@ export default function AIIntegrated() {
               key={s.id}
               href={`#${s.id}`}
               onClick={(e) => handleNavClick(s.id, e)}
-              className={`px-6 py-3 rounded-md text-sm font-medium transition-colors ${
+              className={`px-10 py-3 rounded-md text-sm font-medium transition-colors ${
                 activeId === s.id
                   ? "text-gray-900 bg-[#c2e092]"
                   : "text-gray-700 hover:bg-gray-100"
