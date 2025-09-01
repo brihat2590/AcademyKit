@@ -10,7 +10,7 @@ export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#fbfef5] py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+    <div className="min-h-screen bg-[#fbfef5] py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200 overflow-hidden ">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16  ">
