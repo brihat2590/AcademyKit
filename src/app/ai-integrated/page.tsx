@@ -160,7 +160,7 @@ export default function AIIntegrated() {
       {/* Scroll Sync Section */}
       <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto">
         {/* Left Nav */}
-        <nav className="w-1/4 p-6 sticky top-20 h-screen flex flex-col gap-4 border-r mt-12">
+        <nav className="w-1/4 p-6 sticky top-20 h-screen hidden  md:flex flex-col gap-4 border-r mt-12">
           {sections.map((s) => (
             <a
               key={s.id}
@@ -178,7 +178,7 @@ export default function AIIntegrated() {
         </nav>
 
         {/* Right Scrollable Content */}
-        <div ref={scrollContainerRef} className="w-4/5 overflow-y-auto px-8 py-12 space-y-32">
+        <div ref={scrollContainerRef} className="w-full md:w-4/5 overflow-y-auto px-4 md:px-8 py-6 md:py-12 space-y-12 md:space-y-32">
           <section id="knowledge" className="scroll-mt-24 py-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Efficiency Through Knowledge Base</h2>
             <p className="text-gray-700 mb-6">

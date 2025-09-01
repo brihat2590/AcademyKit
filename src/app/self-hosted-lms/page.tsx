@@ -161,7 +161,7 @@ export default function SelfHostedLms() {
       
 
       {/* Scroll Sync Section */}
-      <div className="flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto mt-10 md:mt-30 ">
+      <div className=" flex min-h-screen bg-[#fbfef5] max-w-7xl mx-auto mt-10 md:mt-30 ">
         {/* Left Nav */}
         <nav className="w-1/4 p-6 hidden md:flex sticky top-20 h-screen  flex-col gap-4 border-r mt-12">
           {sections.map((s) => (
